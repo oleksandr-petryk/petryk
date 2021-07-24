@@ -1,0 +1,15 @@
+<div class="navigation">
+    <div class="container navigation-frame"> 
+        <nav class="navigation-links">
+            {% url 'home' as url_home %} 
+            <a href="" class="nav-link {% if request.path == url_home %}nav-link-active{% endif %}">home</a>
+            <a href="" class="nav-link">myself</a>
+            <a href="" class="nav-link">my works</a>
+            <a href="" class="nav-link">contact</a>
+        </nav>
+
+        <div class="burger">
+            <span></span>
+        </div>
+    </div>
+</div>
