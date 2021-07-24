@@ -1,2 +1,3 @@
 # petryk
-code of my site
+Code of the site
+https://petryk.me
