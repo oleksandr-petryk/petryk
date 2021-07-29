@@ -1,0 +1,20 @@
+.work-detail {
+
+}
+.work-detail h1,
+.work-detail h3 {
+    margin-bottom: 20px;
+}
+.work-view {
+    margin: 20px 0 50px 0;
+    width: 100%;
+}
+.parameters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 40px 0 0 0;
+} 
+.work-complexity {
+    margin-right: 20px;
+}

@@ -1,0 +1,13 @@
+            {% for work in works %}
+            <div class="my-work"> 
+                <a href="{% url 'work_detail' work.slug %}" class="link-to-work-detail"></a>
+                <div class="work-description">
+                    <h4>{{ work.name }}</h4>
+                    <p>{{ work.short_description }}</p>
+                </div>
+
+                <div class="badges-of-work">
+                    {% include 'base/includes/work-parameters.html' %}
+                </div>
+            </div> 
+            {% endfor %}

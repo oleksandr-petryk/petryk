@@ -2,10 +2,15 @@
     <div class="container navigation-frame"> 
         <nav class="navigation-links">
             {% url 'home' as url_home %} 
-            <a href="" class="nav-link {% if request.path == url_home %}nav-link-active{% endif %}">home</a>
-            <a href="" class="nav-link">myself</a>
-            <a href="" class="nav-link">my works</a>
-            <a href="" class="nav-link">contact</a>
+            <a href="{% url 'home' %}" class="nav-link {% if request.path == url_home %}nav-link-active{% endif %}">home</a>
+            {% url 'about_me' as url_about_me %} 
+            <a href="{% url 'about_me' %}" class="nav-link {% if request.path == url_about_me %}nav-link-active{% endif %}">about me</a>
+            {% url 'works' as url_works %} 
+            {% if is_works %}
+            <a href="{% url 'works' %}" class="nav-link {% if request.path == url_works %}nav-link-active{% endif %}">my works</a>
+            {% endif %}
+            {% url 'contact' as url_contact %} 
+            <a href="{% url 'contact' %}" class="nav-link {% if request.path == url_contact %}nav-link-active{% endif %}">contact</a>
         </nav>
 
         <div class="burger">

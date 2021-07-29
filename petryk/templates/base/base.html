@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=""> 
+    <meta name="theme-color" content="#317EFB"/>
+    {% block SEO %}
+    <meta name="keywords" content="Petryk Oleksandr, web developer, portfolio Petryk Oleksandr, Petryk Oleksandr web developer"> 
+    <meta name="description" content="Petryk Oleksandr, web developer, portfolio Petryk Oleksandr, Petryk Oleksandr web developer"> 
+ 
+    <meta property="og:title" content="codecample">
+    <meta property="og:type" content="homepage">
+    <meta property="og:description" content="ready templates Html CSS JS">
+    <meta property="og:image" content="https://codexample.tech{% static 'base/img/codexample.png' %}">
+    <meta property="og:url" content="https://codexample.tech{{ web.get_absolute_url }}">
+    <meta property="og:site_name" content="codexample">
+    {% endblock %}
     <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
     {% block links %}{% endblock %} 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Petryk Oleksandr</title>
+    <link rel="icon"href="{% static 'base/img/favicon.ico' %}">
+    <title>{% block title %}Petryk Oleksandr{% endblock %}</title>
 </head>
 <body>
     <div class="wrapper">

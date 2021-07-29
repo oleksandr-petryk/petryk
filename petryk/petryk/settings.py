@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -9,10 +10,11 @@ DEBUG = True
 WSGI_APPLICATION = 'petryk.wsgi.application'
 
 ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ["petryk.me", "www.petryk.me"]
 
 INSTALLED_APPS = [
     'main',
-    'skills',
+    'about_me',
     'works',
     'contact',
     'django.contrib.admin',
@@ -21,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
@@ -58,17 +61,15 @@ DATABASES = {
     },
 }  
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# DATABASES = {
-#     'default': {
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField' 
+# 'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'petryk',
-#         'USER': 'root',
-#         'PASSWORD': '',
-#         'HOST': '127.0.0.1',
-#         'PORT': '3333'
-#     },
-# }  
+#         'NAME': 'codexamp_petryk',
+#         'USER': 'codexamp_sasha',
+#         'PASSWORD': 'petryk341aler2',
+#         'POSRT': '3306',
+#         'HOST': 'localhost'
+#     }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -94,10 +95,12 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+ 
+
 STATIC_URL = '/static/'
-STATIC_ROOT = "static"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [BASE_DIR / 'static_files']
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = [BASE_DIR / 'media']
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  
 

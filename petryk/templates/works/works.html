@@ -1,0 +1,52 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block SEO %}
+    <meta name="description" content="Petryk Oleksandr, web developer, portfolio Petryk Oleksandr, Petryk Oleksandr web developer, contact with Petryk Oleksandr"> 
+{% endblock %}
+
+{% block title %}Petryk Oleksandr / works{% endblock %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'works/css/works.css' %}">
+<link rel="stylesheet" href="{% static 'works/css/work-card.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content">  
+    <section class="works-wrapper container fix-navigation">
+        <h1>All works</h1>
+        <div class="all-works">
+            {% include 'base/includes/work-card.html' %}
+        </div>
+    </section>
+</div>
+{% endblock %} 
+
+{% block scripts %}{% endblock %}
+
+<div class="my-work">
+    <div class="work-description">
+        <h4>mipando</h4>
+        <p>My father said to create a site for his construction company</p>
+    </div>
+
+    <div class="badges-of-work">
+        <div class="complexity-little-company">little company</div>
+        <div class="work-parameters">
+            <div class="work-parameter">
+                <svg viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 0.0102539C7.85034 0.0102539 0 7.8606 0 17.5103C0 27.16 7.85034 35.0103 17.5 35.0103C27.1497 35.0103 35 27.1599 35 17.5103C35 7.8606 27.1497 0.0102539 17.5 0.0102539ZM17.5 31.1851C9.95948 31.1851 3.82514 25.0508 3.82514 17.5103C3.82514 9.97011 9.95948 3.83539 17.5 3.83539C25.0405 3.83539 31.1749 9.97011 31.1749 17.5103C31.1749 25.0508 25.0405 31.1851 17.5 31.1851Z" fill="black"/>
+                    <path d="M19.0148 17.5314V10.1967C19.0148 9.37776 18.3512 8.71411 17.5325 8.71411C16.7136 8.71411 16.0499 9.37776 16.0499 10.1967V18.005C16.0499 18.0283 16.0557 18.0502 16.0568 18.0735C16.0373 18.4767 16.1762 18.886 16.4841 19.1939L22.0057 24.7151C22.5848 25.2943 23.5235 25.2943 24.1022 24.7151C24.681 24.136 24.6814 23.1973 24.1022 22.6185L19.0148 17.5314Z" fill="black"/>
+                </svg>
+                <b>1 month</b>
+            </div>
+            <div class="work-parameter">
+                <svg viewBox="0 0 21 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0466 15.3233V7.54648C13.7102 7.8271 15.2789 8.50974 16.6199 9.53487C16.8873 9.71821 17.201 9.81768 17.5258 9.82205C18.5664 9.82205 19.4148 8.98471 19.4258 7.94413C19.428 7.49788 19.2534 7.06926 18.9397 6.75111C17.0021 5.09188 14.5719 4.11317 12.0245 3.96736V1.36031C12.0245 0.615732 11.4214 0.0125915 10.6768 0.0125915C10.6613 0.010404 10.6458 0.010404 10.6304 0.010404C9.87479 -0.000670343 9.25175 0.602538 9.24068 1.36031V3.87897C4.26967 4.23246 0.889406 7.30346 0.889406 11.3907C0.889406 16.4059 5.15343 17.7978 9.24068 18.9024V27.7398C7.08433 27.4504 5.05178 26.5556 3.38591 25.1549C3.07221 24.9053 2.68331 24.7661 2.28122 24.7573C1.26272 24.828 0.478426 25.6808 0.491619 26.7015C0.489432 27.1478 0.663954 27.5764 0.977659 27.8945C3.25993 29.9492 6.19394 31.1312 9.26269 31.2306V33.6609C9.26269 33.6763 9.26488 33.6919 9.26488 33.7073C9.30022 34.4629 9.94315 35.0461 10.6987 35.0086C11.4433 35.0086 12.0464 34.4055 12.0464 33.6609V31.1865C18.0779 30.7888 20.5082 27.1213 20.5082 23.2328C20.5083 18.0188 16.1339 16.428 12.0466 15.3233ZM9.26283 14.6163C6.85464 13.9094 4.97672 13.1803 4.97672 11.1256C4.97672 9.07091 6.67793 7.59064 9.26283 7.39185V14.6163ZM12.0466 27.784V19.742C14.5432 20.449 16.4873 21.399 16.4652 23.7188C16.4652 25.3979 15.3164 27.3863 12.0466 27.784Z" fill="black"/>
+                </svg>
+                <b>100USD</b>
+            </div>
+        </div>
+    </div>
+</div> 

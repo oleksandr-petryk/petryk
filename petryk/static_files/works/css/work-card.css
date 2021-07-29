@@ -1,0 +1,96 @@
+.my-work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%; 
+
+    padding: 25px 30px 20px 30px;
+
+    text-align: left;
+    
+    border: 2.5px solid #000000; 
+    border-radius: 12px;
+}
+.link-to-work-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.work-description {
+    margin-bottom: 24px;
+}
+.work-description h4 {
+    margin-bottom: 14px;
+}
+ 
+.work-parameters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+} 
+
+.work-parameter {
+    display: flex;
+    align-items: center;
+} 
+.work-parameter svg {
+    display: block;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+.work-parameter {
+    margin-bottom: 10px;
+}
+.work-parameter:not(:last-child) {
+    margin-right: 35px;
+}
+
+
+/* buttons of dificult work */
+.work-complexity {
+    height: min-content;
+}
+.complexity-pet,
+.complexity-lending,
+.complexity-little-company,
+.complexity-middle-company,
+.complexity-big-company {
+    width: min-content;
+    padding: 6px 22px; 
+    border-radius: 3px;
+    
+    color: var(--text-color-reverse);
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 18px;
+}
+.complexity-pet { 
+    background: #99D992; 
+}
+.complexity-lending { 
+    background: #887070;
+}
+.complexity-little-company { 
+    background: #686EF0;
+}
+.complexity-middle-company {
+    background: #FF7FFA;
+}
+.complexity-big-company {
+    background: #FF744D;
+}
+ 
+@media screen and (max-width: 768px) { 
+    .all-works {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 22px;
+    } 
+}
+ 

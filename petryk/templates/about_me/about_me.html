@@ -1,0 +1,90 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block title %}Petryk Oleksandr / about me{% endblock %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'about_me/css/about_me.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content">   
+    <section class="preview container fix-navigation">
+        <div class="short-data">
+            <h1>Petryk Oleksandr</h1>
+            <p>Age: 17 yeats old</p>
+            <p>Contry: Ukraine</p>
+            <p>Level: Junior</p>
+        </div>
+
+        <div class="sasha-photo-wrapper">
+            <img src="{% static 'about_me/img/background-mountains.png' %}" alt="background-mountains" class="background-mountains"> 
+            <img src="{% static 'about_me/img/Sasha-photo.jpg' %}" alt="Sasha photo" class="sasha-photo"> 
+        </div>
+    </section>
+
+    <section class="container about-me">
+        <h2>About me</h2>
+        <p>As you can already understand, I am a programmer, I develop sites. At first I just liked writing code, but later I realized that I wanted to do serious programming, therefore I continued to study, and reached his present level. I love learning something new, and I do well. In general, I lead a healthy lifestyle, I have no bad habits, I like to spend time actively. I take into account the feelings and interests of others, so I usually do not cause trouble, I find common ground with others quickly enough, I know how to work in a team.</p>
+    </section>
+
+    <section class="container languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>English / B1 </li>
+            <li>Russian / native</li>
+            <li>Ukranian / native</li>
+        </ul>
+        <p>Since I live in Ukraine, I know the Ukrainian language, I also have relatives in Russia, so I also know it well. As for the English language, I really like it, so I study it by listening to music, watching movies and the like.</p>
+    </section>
+
+    <section class="container skills">
+        <h2>My skills</h2>
+        
+        <div class="skill-part">
+            <h4>Html / CSS</h4>
+            <p>Since I am a web developer, I need to know such basic technologies as HTML, CSS. I have been studying them for the last two years, since then I have studied them well</p>
+        </div>
+        <div class="skill-part">
+            <h4>JavaScript</h4>
+            <p>If we need some interaction with the content on your site, we need JavaScript, so I studied it as well. I haven't studied any JS frameworks yet, but I'm going to fix it soon.</p>
+        </div>
+        <div class="skill-part">
+            <h4>Python</h4>
+            <p>My first programming language was Python, I liked it so I started to study it in depth. I use Django to write the backend part of the site.</p>
+        </div>
+        <div class="skill-part">
+            <h4>Problem-solving capability</h4>
+            <p>I like to approach the problem wisely, I believe that this way of solving problems characterizes a good specialist.</p>
+        </div>
+        <div class="skill-part">
+            <h4>Mathematical skills</h4>
+            <p>Until the 6th grade, I understood mathematics well, but later stopped teaching it, so I don't know higher mathematics, but that doesn't stop me from completing tasks that require knowledge of mathematics.</p>
+        </div>
+    </section>
+
+    <section class="container intresting-fact">
+        <img src="{% static 'about_me/img/facts-view.jpg' %}" alt="facts-view">
+
+        <div class="facts">
+            <h3>Intresting facts</h3>
+            <p>I like a bicycle</p>
+            <p>I can solve a Rubik's cube</p>
+            <p>I love a music</p>
+            <p>I drink a lot of tee</p>
+        </div>
+    </section>
+
+    <section class="container gallery-wrapper">
+        <h2>Gallery</h2>
+
+        <div class="gallery"> 
+            {% for photo in gallery %}
+            <img src="{{ photo.img.url }}" alt="{{ photo.get_filename }}" class="img-shadow">  
+            {% endfor %}   
+        </div>
+    </section>
+</div>
+{% endblock %} 
+
+{% block scripts %}{% endblock %}

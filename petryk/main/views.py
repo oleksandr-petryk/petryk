@@ -1,11 +1,22 @@
 from django.shortcuts import render, redirect
 from django.views.generic import View
-from .models import MessageFromUser
-from .forms import MessageFromUserForm
+from works.models import Work
+from contact.forms import MessageFromUserForm
+from contact.models import MessageFromUser
+
+from django.utils.translation import gettext as _
+
+def is_works():
+    if Work.objects.all().count() != 0:
+        return True
+    
+    else:
+        return False
 
 class First(View):
     def get(self, request):
         context = {
+            'hello': _('Hello world'),
             'navigation': {
                 'home': False,
                 'skills': False,
@@ -13,7 +24,9 @@ class First(View):
                 'contact': False
             },
             'hide_footer': True,
-            'form': MessageFromUserForm()
+            'form': MessageFromUserForm(),
+            'works': Work.objects.order_by('-id')[:2],
+            'is_works': is_works(),
         }
         return render(request, 'main/main.html', context)
 
@@ -23,3 +36,6 @@ class First(View):
             form.save() 
             
         return redirect("/")
+
+ 
+ 

@@ -1,0 +1,28 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block title %}Petryk Oleksandr / {{ work.name }}{% endblock %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'works/css/work-detail.css' %}">
+<link rel="stylesheet" href="{% static 'works/css/work-card.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content">  
+    <section class="work-detail container fix-navigation">
+        <h1>{{ work.name }}</h1>
+        <p>{{ work.short_description }}</p>
+        <a href="{{ work.site_link }}">{{ work.site_link }}</a>
+        <div class="parameters">
+            {% include 'base/includes/work-parameters.html' %}
+        </div>
+        <img src="{{ work.site_view.url }}" alt="site view" class="work-view img-shadow">
+        <h3>About {{ work.name }}</h3>
+        <p>{{ work.description }}</p>
+    </section>
+</div>
+{% endblock %} 
+
+{% block scripts %}{% endblock %}
+ 

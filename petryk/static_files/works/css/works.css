@@ -1,0 +1,18 @@
+/* works */
+.works-wrapper {
+    flex-direction: column;
+}
+.works-wrapper h1 {
+    margin-bottom: 20px;
+}
+.all-works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 22px;
+} 
+.works {
+    text-align: center;
+}
+.works > h2 {
+    margin-bottom: 50px;
+}

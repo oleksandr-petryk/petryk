@@ -7,30 +7,32 @@
     color: #000;
     font-family: 'Montserrat', sans-serif;
 
+    --nav-link-color: #000;
+    --nav-link-reverse-color: #fff;
+    --nav-link-active-color: #b3b3b3;
+    --nav-link-reverse-active-color: #686868;
+    --nav-transition: 0.3s; 
+
     --theme-color: #fff;
     --theme-color-reverse: #000;
 
     --btn-color: #000;
     --btn-color-reverse: #fff;
 
-
     --text-color-def: #000;
     --text-color-reverse: #fff;
+
     --color-background: #fff;
-
-    --burger-transition: 0.3s;
-    --burger-transition: 0.3s;
-
     --background: #fff;
 
-    --bg-footer: #112832;
+    --bg-footer: #112832; 
 }
-*::selection {
+/* *::selection {
     background: rgba(61, 202, 61, 0.486);  
 } 
 *::-moz-selection {
     background: rgba(61, 202, 61, 0.486);  
-}  
+}   */
 html {
     scroll-behavior: smooth;
 }
@@ -66,7 +68,7 @@ a {
 }
 .wrapper {
     width: 100%;
-    min-height: 200vh;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -79,6 +81,10 @@ section:not(:last-child) {
 }
 .lock-skroll {
     overflow: hidden;
+}
+.img-shadow {
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    display: block;
 }
  
 
@@ -172,15 +178,17 @@ button {
     align-items: center;
 }
 .nav-link { 
+    text-align: center;
+    white-space: nowrap;
     font-size: 18px; 
     font-weight: 700; 
-    color: var(--text-color-def);
+    color: var(--nav-link-color);
 }
 .nav-link:not(:last-child) {
     margin-right: 40px;
 }
 .nav-link-active {
-    color: #D6D6D6;
+    color: var(--nav-link-active-color); 
 }
 /* burger */
 .burger {
@@ -188,20 +196,20 @@ button {
     display: none;
     align-items: center;
 
-    width: 44px;
-    height: 27px;
+    width: 54px;
+    height: 37px;
 } 
 .burger span,
 .burger::before,
 .burger::after {
-    transition: var(--burger-transition); 
+    transition: var(--nav-transition); 
     content: '';
     position: absolute;
-    height: 3px;
+    height: 4px;
     width: 100%;
 
-    border-radius: 3px;
-    background: var(--theme-color-reverse);
+    border-radius: 10px;
+    background: var(--nav-link-color);
 }
 .burger::before {
     top: 0;
@@ -213,17 +221,17 @@ button {
 }
 /* burger-active */
 .navigation.navigation-active  .burger span {
-    transition: var(--burger-transition);
+    transition: var(--nav-transition);
     opacity: 0;
     transform: translate3d(30px, 0, 0);
 }
 .navigation.navigation-active .burger::before {
-    transition: var(--burger-transition); 
+    transition: var(--nav-transition); 
     transform: rotate(-45deg);
     top: 13.5px;
 }
 .navigation.navigation-active .burger::after {
-    transition: var(--burger-transition); 
+    transition: var(--nav-transition); 
     transform: rotate(45deg);
     top: 13.5px;
     width: 100%;
@@ -237,7 +245,7 @@ button {
     align-items: center;
 }
 .fix-navigation {
-    margin-top: 120px;
+    margin-top: 157px;
 }
 
 /* footer */
@@ -250,7 +258,7 @@ footer {
     margin-top: 70px;
 
     width: 100%; 
-    background: #112832;
+    background: var(--bg-footer);
 }
 footer p, 
 footer b, 
@@ -317,6 +325,14 @@ footer .contact-group:not(:last-child) {
     section:not(:last-child) {
         margin-bottom: 100px;
     } 
+
+    /* footer */ 
+    .footer-wrapper { 
+        flex-direction: column-reverse; 
+    } 
+    .contact-data {
+        margin-top: 30px;
+    }
 }
     
 @media screen and (max-width: 576px) {
@@ -332,7 +348,7 @@ footer .contact-group:not(:last-child) {
     /* navigation */ 
     .navigation {  
         width: 100%;
-        height: 65px; 
+        height: 80px; 
         /* box-shadow: 0 0 10px rgba(0,0,0,0.15); */
     } 
     .nav-link:not(:last-child) {
@@ -340,7 +356,7 @@ footer .contact-group:not(:last-child) {
     } 
 
     .navigation-links {
-        transition: var(--burger-transition);
+        transition: var(--nav-transition);
         position: absolute;
         display: flex; 
         top: -100vh;
@@ -348,16 +364,20 @@ footer .contact-group:not(:last-child) {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 100px;
+        padding: 100px;
         width: 100%;
         height: 100vh;
 
+        overflow: scroll;
+
         background: var(--background);
         opacity: 0.2;
-
+    }
+    .nav-link {
+        font-size: 25px;
     }
     .navigation.navigation-active .navigation-links { 
-        transition: var(--burger-transition);
+        transition: var(--nav-transition);
         top: 0;  
         opacity: 1;
     }
