@@ -1,5 +1,5 @@
 {% extends "base/base.html" %}
-{% load static %}
+{% load static %}{% load i18n %}
 
 {% block title %}Petryk Oleksandr / web developer{% endblock %}
 
@@ -11,7 +11,8 @@
 {% block content %}
 <div class="content">  
     <section class="container offer fix-navigation">
-        <header>  
+        <header>    
+            <h1>{% translate "My name is Oleksandr" %}</h1> 
             <b>Petryk Oleksandr</b>
             <h1>Web developer</h1>
             <p>Just a guy who wants to create something <br> True "position"</p>

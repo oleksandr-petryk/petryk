@@ -4,7 +4,7 @@ from works.models import Work
 from contact.forms import MessageFromUserForm
 from contact.models import MessageFromUser
 
-from django.utils.translation import gettext as _
+# from django.utils.translation import gettext as _
 
 def is_works():
     if Work.objects.all().count() != 0:
@@ -15,8 +15,7 @@ def is_works():
 
 class First(View):
     def get(self, request):
-        context = {
-            'hello': _('Hello world'),
+        context = { 
             'navigation': {
                 'home': False,
                 'skills': False,
