@@ -13,14 +13,14 @@ function adaptateNavigation() {
     if (window.innerWidth > 576) {
         navigation.classList.remove('navigation-mobile-mode')
         if (window.pageYOffset != 0) { 
-            navigation.classList.add('navigation-full-mode')
+            navigation.classList.add('navigation-desktop-mode')
         }
         else {
-            navigation.classList.remove('navigation-full-mode')
+            navigation.classList.remove('navigation-desktop-mode')
         } 
     }
     else {
-        navigation.classList.remove('navigation-full-mode')
+        navigation.classList.remove('navigation-desktop-mode')
         if (window.pageYOffset != 0) { 
             navigation.classList.add('navigation-mobile-mode')
         }

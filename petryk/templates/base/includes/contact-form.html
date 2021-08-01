@@ -1,9 +1,9 @@
-<footer>
+<footer>{% load i18n %}
     <form action="" method="post" class="container contact"> 
         {% csrf_token %}
         <div class="call-to-user">
-            <h1>Write to me</h1>
-            <p>If you want to cooperate or ask<br> something - write to me!</p>
+            <h1>{% translate "Write to me" %}</h1>
+            <p>{% translate "If you want to cooperate or ask" %}<br> {% translate "something - write to me!" %}</p>
         </div>
 
         <div class="contact-data-wrapper">
@@ -23,6 +23,6 @@
             {{form.message}} 
         </div>
         
-        <button class="btn-big send-contact-form">send message</button>
+        <button class="btn-big send-contact-form">{% translate "send message" %}</button>
     </form>
 </footer>

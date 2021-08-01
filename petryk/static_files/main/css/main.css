@@ -63,9 +63,12 @@ header b {
     width: 50%;
 }
 .my-goal div svg {
-    width: 110%;
+    width: 105%;
 }
 .my-goal div h2 {
+    margin-bottom: 20px;
+}
+.my-goal p:not(:last-child) {
     margin-bottom: 20px;
 }
 
@@ -114,13 +117,8 @@ header b {
 } 
 .call-to-user p { 
     margin-top: 10px;
-    font-weight: 200;  
-    color: var(--text-color-reverse);
-}
-.send-contact-form { 
-    border-color: var(--btn-color-reverse);
-    color: var(--btn-color-reverse);
-}
+    font-weight: 200;   
+} 
 .contact-data {
     display: flex;
     flex-direction: column;
@@ -129,9 +127,8 @@ header b {
 .contact-social-networks {
     display: flex;
     align-items: center;
-}
+} 
 
-/* form */
 footer {
     padding: 180px 0 100px 0;
 }
@@ -163,8 +160,8 @@ footer {
     border: none;
     outline: none;
     background: inherit;
-    border-bottom: 1px solid #6D7A7D;
-    color: var(--text-color-reverse);
+    border-bottom: 1px solid var(--theme-color-reverse);
+    color: var(--text-color-def);
     font-weight: 600;
     font-size: 20px;  
 }
@@ -279,13 +276,8 @@ footer {
     } 
     .call-to-user p { 
         margin-top: 10px;
-        font-weight: 200;  
-        color: var(--text-color-reverse);
-    }
-    .send-contact-form { 
-        border-color: var(--btn-color-reverse);
-        color: var(--btn-color-reverse);
-    }
+        font-weight: 200;   
+    } 
     .contact-data {
         display: flex;
         flex-direction: row;

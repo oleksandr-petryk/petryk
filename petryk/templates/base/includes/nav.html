@@ -1,20 +1,40 @@
-<div class="navigation">
+<div class="navigation">{% load i18n %}
     <div class="container navigation-frame"> 
-        <nav class="navigation-links">
-            {% url 'home' as url_home %} 
-            <a href="{% url 'home' %}" class="nav-link {% if request.path == url_home %}nav-link-active{% endif %}">home</a>
-            {% url 'about_me' as url_about_me %} 
-            <a href="{% url 'about_me' %}" class="nav-link {% if request.path == url_about_me %}nav-link-active{% endif %}">about me</a>
-            {% url 'works' as url_works %} 
-            {% if is_works %}
-            <a href="{% url 'works' %}" class="nav-link {% if request.path == url_works %}nav-link-active{% endif %}">my works</a>
-            {% endif %}
-            {% url 'contact' as url_contact %} 
-            <a href="{% url 'contact' %}" class="nav-link {% if request.path == url_contact %}nav-link-active{% endif %}">contact</a>
-        </nav>
+        <div class="logo">
+            <a href="{% url 'home' %}" class="petryk-logo">Petryk</a>
+        </div> 
+        
+        <div class="nav-options">
+            <nav class="navigation-links">
+                {% url 'home' as url_home %} 
+                <a href="{% url 'home' %}" class="nav-link {% if request.path == url_home %}nav-link-active{% endif %}">{% translate "home" %}</a>
+                {% url 'about_me' as url_about_me %} 
+                <a href="{% url 'about_me' %}" class="nav-link {% if request.path == url_about_me %}nav-link-active{% endif %}">{% translate "about me" %}</a>
+                {% url 'works' as url_works %} 
+                {% if is_works %}
+                <a href="{% url 'works' %}" class="nav-link {% if request.path == url_works %}nav-link-active{% endif %}">{% translate "my works" %}</a>
+                {% endif %}
+                {% url 'contact' as url_contact %} 
+                <a href="{% url 'contact' %}" class="nav-link {% if request.path == url_contact %}nav-link-active{% endif %}">{% translate "contact" %}</a>
+            </nav> 
+
+            <form action="{% url 'set_language' %}" class="change-language" method="post">{% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}">
+                <select name="language" onchange="this.form.submit()">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    {% for language in languages %}
+                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                            {{ language.code|upper }}  
+                        </option>
+                    {% endfor %}
+                </select> 
+            </form>
+        </div>
 
         <div class="burger">
             <span></span>
         </div>
     </div>
-</div>
+</div> 

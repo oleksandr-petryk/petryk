@@ -1,22 +1,8 @@
-.burger span,
-.burger::before,
-.burger::after { 
-    background: var(--nav-link-reverse-color);
-}
-.wrapper {
-    background: var(--bg-footer);
-}
 .navigation {
     background: inherit;
-}
-.navigation-links {
-    background: var(--bg-footer);
-}
-.nav-link {
-    color: var(--nav-link-reverse-color);
-}
-.nav-link-active {
-    color: var(--nav-link-reverse-active-color);
+} 
+footer {
+    background: var(--theme-color);
 }
 
 /* form */ 
@@ -31,13 +17,8 @@
 } 
 .call-to-user p { 
     margin-top: 10px;
-    font-weight: 200;  
-    color: var(--text-color-reverse);
-}
-.send-contact-form { 
-    border-color: var(--btn-color-reverse);
-    color: var(--btn-color-reverse);
-}
+    font-weight: 200;   
+} 
 .contact-data {
     display: flex;
     flex-direction: column;
@@ -46,11 +27,10 @@
 .contact-social-networks {
     display: flex;
     align-items: center;
-}
+} 
 
-/* form */
 footer {
-    padding: 100px 0 100px 0;
+    padding: 180px 0 100px 0;
 }
 .form-inputs { 
     display: flex;
@@ -80,8 +60,8 @@ footer {
     border: none;
     outline: none;
     background: inherit;
-    border-bottom: 1px solid #6D7A7D;
-    color: var(--text-color-reverse);
+    border-bottom: 1px solid var(--theme-color-reverse);
+    color: var(--text-color-def);
     font-weight: 600;
     font-size: 20px;  
 }
@@ -104,17 +84,14 @@ footer {
     } 
     .call-to-user p { 
         margin-top: 10px;
-        font-weight: 200;  
-        color: var(--text-color-reverse);
-    }
-    .send-contact-form { 
-        border-color: var(--btn-color-reverse);
-        color: var(--btn-color-reverse);
-    }
+        font-weight: 200;   
+    } 
     .contact-data {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
+        /* width: min-content; */
+         
     } 
     .contact-data-wrapper {
         display: flex;
@@ -139,8 +116,7 @@ footer {
 
     /* form */
     footer {
-        margin: 0;
-        padding: 90px 0 60px 0;
+        padding: 80px 0 60px 0;
     }
     .form-inputs { 
         display: flex;

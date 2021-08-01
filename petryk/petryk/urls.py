@@ -22,6 +22,7 @@ urlpatterns = [
     path('about-me/', include('about_me.urls')),
     path('contact/', include('contact.urls')),
     path('works/', include('works.urls')),
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
  
 if settings.DEBUG:
