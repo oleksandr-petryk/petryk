@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 00:00+0300\n"
+"POT-Creation-Date: 2021-08-02 16:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,15 +90,10 @@ msgstr "Украинский / родной"
 
 #: templates/about_me/about_me.html:38
 msgid ""
-"Since I live in Ukraine, I know the Ukrainian language, I also have "
-"relatives in Russia, so I also know it well. As for the English language, I "
-"really like it, so I study it by listening to music, watching movies and the "
-"like."
-msgstr ""
-"Поскольку я живу в Украине, я знаю украинский язык, у меня тоже есть "
-"родственники в России, поэтому я тоже его хорошо знаю. Что касается "
-"английского языка, мне он очень нравится, поэтому я изучаю его, слушая "
-"музыку, просматривая фильмы и тому подобное."
+"Since I live in Ukraine, I know the Ukrainian language, also I also know "
+"Russian. As for the English language, I really like it, so I study it by "
+"listening to music, watching movies and the like."
+msgstr "Поскольку я живу в Украине, я знаю украинский язык, а также русский язык. Что касается английского языка, мне он очень нравится, поэтому я изучаю его, слушая музыку, просматривая фильмы и тому подобное."
 
 #: templates/about_me/about_me.html:42
 msgid "My skills"
@@ -106,37 +101,34 @@ msgstr "Мои навыки"
 
 #: templates/about_me/about_me.html:46
 msgid ""
-"Since I am a web developer, I need to know such basic technologies as HTML, "
-"CSS. I have been studying them for the last two years, since then I have "
-"studied them well."
-msgstr ""
-"Поскольку я веб-разработчик, мне необходимо знать такие базовые технологии, "
-"как HTML, CSS. Я изучаю их последние два года, с тех пор хорошо их изучил."
+"These two technologies were my first in web development, I have been "
+"studying them since 2019. So I can do almost anything with their help."
+msgstr "Эти две технологии были моими первыми в веб-разработке, я изучаю их с 2019 года. Так что с их помощью я могу делать практически все, что угодно."
 
 #: templates/about_me/about_me.html:50
 msgid ""
-"If we need some interaction with the content on your site, we need "
-"JavaScript, so I studied it as well. I haven't studied any JS frameworks "
-"yet, but I'm going to fix it soon."
-msgstr ""
-"Если нам нужно какое-то взаимодействие с контентом на вашем сайте, нам "
-"понадобится JavaScript, поэтому я его тоже изучил. Я еще не изучал никаких "
-"JS-фреймворков, но скоро исправлю."
+"I have been studying JavaScript since 2021. With it I can create complex "
+"elements of interaction on the site. I don't know any JS framework, but I'm "
+"working on fixing it."
+msgstr "Я изучаю JavaScript с 2021 года. С его помощью я могу создавать сложные элементы взаимодействия на сайте. Я не знаю никакой JS framework, но я работаю над тем чтобы исправить это."
 
 #: templates/about_me/about_me.html:54
 msgid ""
 "My first programming language was Python, I liked it so I started to study "
 "it in depth. I use Django to write the backend part of the site."
-msgstr ""
-"Моим первым языком программирования был Python, он мне понравился, поэтому я "
-"начал его углубленно изучать. Я использую Django для написания серверной "
-"части сайта."
+msgstr "Моим первым языком программирования был Python, он мне понравился, поэтому я начал его углубленно изучать. Я использую Django для написания серверной части сайта." 
 
-#: templates/about_me/about_me.html:57
+#: templates/about_me/about_me.html:58
+msgid ""
+"I've always liked Linux, so I recently started studying it, I use it to "
+"configure VPS servers for my projects. I also use Linux as the main OS."
+msgstr "Мне всегда нравился Linux, поэтому я недавно начал его изучать, использую эти знания для настройки серверов VPS для своих проектов. Я также использую Linux в качестве основной ОС."
+
+#: templates/about_me/about_me.html:61
 msgid "Problem-solving capability"
 msgstr "Способность решать проблемы"
 
-#: templates/about_me/about_me.html:58
+#: templates/about_me/about_me.html:62
 msgid ""
 "I like to approach the problem wisely, I believe that this way of solving "
 "problems characterizes a good specialist."
@@ -144,41 +136,38 @@ msgstr ""
 "Я люблю подходить к проблеме с умом, считаю, что такой способ решения "
 "проблем характеризует хорошего специалиста."
 
-#: templates/about_me/about_me.html:61
+#: templates/about_me/about_me.html:65
 msgid "Mathematical skills"
 msgstr "Математические навыки"
 
-#: templates/about_me/about_me.html:62
+#: templates/about_me/about_me.html:66
 msgid ""
-"Until the 6th grade, I understood mathematics well, but later stopped "
-"teaching it, so I don't know higher mathematics, but that doesn't stop me "
-"from completing tasks that require knowledge of mathematics."
-msgstr ""
-"До 6 класса я хорошо разбиралась в математике, но позже перестала заниматься "
-"ею, поэтому не знаю высшей математики, но это не мешает мне выполнять "
-"задания, требующие знания математики."
+"I do not know higher mathematics, but I have good logic, it allows me to "
+"perform tasks that require knowledge of mathematics, if I do not know "
+"something, I learn it quickly."
+msgstr "Я не знаю высшей математики, но у меня хорошая логика, она позволяет мне выполнять задания, требующие знания математики, если я чего-то не знаю, я быстро это выучиваю."
 
-#: templates/about_me/about_me.html:70 templates/main/main.html:59
+#: templates/about_me/about_me.html:74 templates/main/main.html:59
 msgid "Intresting facts"
 msgstr "Интересные факты"
 
-#: templates/about_me/about_me.html:71
+#: templates/about_me/about_me.html:75
 msgid "I like a bicycle"
 msgstr "Я люблю кататься на велосипеде"
 
-#: templates/about_me/about_me.html:72
+#: templates/about_me/about_me.html:76
 msgid "I can solve a Rubik's cube"
 msgstr "Я могу собрать Кубик Рубика"
 
-#: templates/about_me/about_me.html:73
+#: templates/about_me/about_me.html:77
 msgid "I love a music"
 msgstr "Я люблю музыку"
 
-#: templates/about_me/about_me.html:74
+#: templates/about_me/about_me.html:78
 msgid "I drink a lot of tee"
 msgstr "Я пью много чая"
 
-#: templates/about_me/about_me.html:79
+#: templates/about_me/about_me.html:83
 msgid "Gallery"
 msgstr "Галерея"
 
@@ -266,3 +255,4 @@ msgstr "Я сделал этот сайт сам, включая дизайн, �
 #: templates/main/main.html:61
 msgid "SVG images take up much less memory than PNG"
 msgstr "Изображения SVG занимают гораздо меньше памяти, чем PNG"
+ 

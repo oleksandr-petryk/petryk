@@ -142,6 +142,9 @@ button {
     font-size: 15px;
 } 
 
+select {
+    cursor: pointer;
+}
 
 
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 00:00+0300\n"
+"POT-Creation-Date: 2021-08-02 16:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,16 +89,12 @@ msgstr "Російська / рідна"
 msgid "Ukranian / native"
 msgstr "Українська / рідна"
 
-#: templates/about_me/about_me.html:38
+#: templates/about_me/about_me.html:38 
 msgid ""
-"Since I live in Ukraine, I know the Ukrainian language, I also have "
-"relatives in Russia, so I also know it well. As for the English language, I "
-"really like it, so I study it by listening to music, watching movies and the "
-"like."
-msgstr ""
-"Я живу в Україні, тому добре знаю Українську, крім того я знаю і Російську "
-"мову. Що до Англійської мови, Я дуже її люблю, тому постійно її вивчаю, "
-"слухаю музику дивлюсь фільми на Англійській мові і тому подібне. "
+"Since I live in Ukraine, I know the Ukrainian language, also I also know "
+"Russian. As for the English language, I really like it, so I study it by "
+"listening to music, watching movies and the like."
+msgstr "Оскільки я живу в Україні, то я знаю українську мову, також знаю російську. Щодо англійської мови, мені вона дуже подобається, тому я вивчаю її, слухаючи музику, дивлячись фільми, читию книго тощо."
 
 #: templates/about_me/about_me.html:42
 msgid "My skills"
@@ -106,21 +102,16 @@ msgstr "Мої навички"
 
 #: templates/about_me/about_me.html:46
 msgid ""
-"Since I am a web developer, I need to know such basic technologies as HTML, "
-"CSS. I have been studying them for the last two years, since then I have "
-"studied them well."
-msgstr ""
-"Так як я веб розробник, то мені необхідно знати HMTL, CSS. Я вчмв ці "
-"технології останні два роки, тому я їх добре знаю."
+"These two technologies were my first in web development, I have been "
+"studying them since 2019. So I can do almost anything with their help."
+msgstr "Ці дві технології були моїми першими у веб -розробці, я вивчаю їх з 2019 року. Тому я можу зробити майже все що завгодно з їхньою допомогою."
 
 #: templates/about_me/about_me.html:50
 msgid ""
-"If we need some interaction with the content on your site, we need "
-"JavaScript, so I studied it as well. I haven't studied any JS frameworks "
-"yet, but I'm going to fix it soon."
-msgstr ""
-"Якщо на сайті потрібна інтерактивна взаємодія, то нам потрібен JavaScript, "
-"тому я його добре вивчив.Я покищо не вивчив жодного JS фреймворку."
+"I have been studying JavaScript since 2021. With it I can create complex "
+"elements of interaction on the site. I don't know any JS structure, but I'm "
+"working on fixing it."
+msgstr "Я вивчаю JavaScript з 2021 року. З його допомогою я можу створювати складні елементи взаємодії на сайті. Я не знаю жодного JS framework, але я працюю над тим щоб виправити це."
 
 #: templates/about_me/about_me.html:54
 msgid ""
@@ -131,11 +122,17 @@ msgstr ""
 "розпочав поглиблено вивчати його.Я використовую Django щоб писати backend "
 "частини сайтів."
 
-#: templates/about_me/about_me.html:57
+#: templates/about_me/about_me.html:58
+msgid ""
+"I've always liked Linux, so I recently started studying it, I use it to "
+"configure VPS servers for my projects. I also use Linux as the main OS."
+msgstr "Мені завжди подобався Linux, тому я нещодавно почав його вивчати, використовую здобуті знання для налаштування VPS серверів, для своїх проектів. Я також використовую Linux як основну ОС."
+
+#: templates/about_me/about_me.html:61
 msgid "Problem-solving capability"
 msgstr "Здатність усувати пробдеми"
 
-#: templates/about_me/about_me.html:58
+#: templates/about_me/about_me.html:62
 msgid ""
 "I like to approach the problem wisely, I believe that this way of solving "
 "problems characterizes a good specialist."
@@ -143,41 +140,38 @@ msgstr ""
 "Я люблю з розумом підходити до вирішення проблеми, я думаю що саме такий "
 "підхід характерезуєдоброго спеціаліста."
 
-#: templates/about_me/about_me.html:61
+#: templates/about_me/about_me.html:65
 msgid "Mathematical skills"
 msgstr "Знання математики"
 
-#: templates/about_me/about_me.html:62
+#: templates/about_me/about_me.html:66
 msgid ""
-"Until the 6th grade, I understood mathematics well, but later stopped "
-"teaching it, so I don't know higher mathematics, but that doesn't stop me "
-"from completing tasks that require knowledge of mathematics."
-msgstr ""
-"До 6 класу я добре розумів математику, але згодом перестав вивчати її,тому я "
-"не знаю вищої математики. Але це не заважає менеівиконувати завдання що "
-"потребують знань метематики."
+"I do not know higher mathematics, but I have good logic, it allows me to "
+"perform tasks that require knowledge of mathematics, if I do not know "
+"something, I learn it quickly."
+msgstr "Я не знаю вищої математики, але маю хорошу логіку, це дозволяє мені виконувати завдання, що вимагають знань з математики, якщо я чогось не знаю, то я швидко це вивчаю."
 
-#: templates/about_me/about_me.html:70 templates/main/main.html:59
+#: templates/about_me/about_me.html:74 templates/main/main.html:59
 msgid "Intresting facts"
 msgstr "Цікаві факти"
 
-#: templates/about_me/about_me.html:71
+#: templates/about_me/about_me.html:75
 msgid "I like a bicycle"
 msgstr "Я люблю кататись на велосипеді"
 
-#: templates/about_me/about_me.html:72
+#: templates/about_me/about_me.html:76
 msgid "I can solve a Rubik's cube"
 msgstr "Я вмію складати Кубіка Рубіка"
 
-#: templates/about_me/about_me.html:73
+#: templates/about_me/about_me.html:77
 msgid "I love a music"
 msgstr "Я люблю музику"
 
-#: templates/about_me/about_me.html:74
+#: templates/about_me/about_me.html:78
 msgid "I drink a lot of tee"
 msgstr "Люблю пити багато чаю"
 
-#: templates/about_me/about_me.html:79
+#: templates/about_me/about_me.html:83
 msgid "Gallery"
 msgstr "Галерея"
 

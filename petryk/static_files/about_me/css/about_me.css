@@ -1,6 +1,10 @@
 p {  
     color: var(--text-color-def);
 }
+.languages h2,
+.about-me h2 {
+    margin-bottom: 10px;
+}
 
 /* preview */
 .preview {
