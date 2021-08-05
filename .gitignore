@@ -63,6 +63,7 @@ db.sqlite3-journal
 petryk/static/admin/
 petryk/*/migrations/
 petryk/media/
+petryk/static/
 
 # Flask stuff:
 instance/
