@@ -59,10 +59,7 @@ p,
 b,
 a {
     font-size: 20px; 
-}
-p {
-    color: #728CA1;
-}
+} 
 a { 
     text-decoration: none; 
 }
@@ -440,6 +437,27 @@ footer .contact-group:not(:last-child) {
     .fix-navigation {
         margin-top: 80px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    h1 { 
+        font-size: 46px;
+    } 
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 35px;
+    } 
+    h4 {
+        font-size: 32px;
+    } 
+    h5 {
+        font-size: 30px;
+    } 
+    h6 {
+        font-size: 28px;
+    } 
 }
 
  

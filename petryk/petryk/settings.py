@@ -9,7 +9,8 @@ DEBUG = True
 
 WSGI_APPLICATION = 'petryk.wsgi.application'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.11', '127.0.0.1']
+# ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ["petryk.me", "www.petryk.me"]
 
 INSTALLED_APPS = [
@@ -42,7 +43,8 @@ ROOT_URLCONF = 'petryk.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates', BASE_DIR],
+        # 'DIRS': ['templates', BASE_DIR],
+        'DIRS': [BASE_DIR / 'templates', BASE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -58,7 +60,8 @@ TEMPLATES = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3'
+        # 'NAME': BASE_DIR / 'db.sqlite3'
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
 }  
 
@@ -90,24 +93,21 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-# LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'uk'
+LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'ua'
 
 LOCALE_PATHS = ( os.path.join(BASE_DIR, 'locale'), )
 
 LANGUAGES = [
-    ('ru', 'Russian'),
-    ('uk', 'Ukrainian'),
-    ('en', 'English')
+    ('ru', 'RU'), 
+    ('uk', 'UA'),
+    ('en', 'EN')
 ]
-
-
 
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True   
-
 
 
 STATIC_URL = '/static/'
@@ -116,4 +116,3 @@ STATICFILES_DIRS = [BASE_DIR / 'static_files']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  
-

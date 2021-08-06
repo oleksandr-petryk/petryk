@@ -7,15 +7,15 @@
         <div class="nav-options">
             <nav class="navigation-links">
                 {% url 'home' as url_home %} 
-                <a href="{% url 'home' %}" class="nav-link {% if request.path == url_home %}nav-link-active{% endif %}">{% translate "home" %}</a>
+                <a href="{% url 'home' %}" class="nav-link {% if request.path == url_home %}nav-link-active{% endif %}">{% trans "home" %}</a>
                 {% url 'about_me' as url_about_me %} 
-                <a href="{% url 'about_me' %}" class="nav-link {% if request.path == url_about_me %}nav-link-active{% endif %}">{% translate "about me" %}</a>
+                <a href="{% url 'about_me' %}" class="nav-link {% if request.path == url_about_me %}nav-link-active{% endif %}">{% trans "about me" %}</a>
                 {% url 'works' as url_works %} 
                 {% if is_works %}
-                <a href="{% url 'works' %}" class="nav-link {% if request.path == url_works %}nav-link-active{% endif %}">{% translate "my works" %}</a>
+                <a href="{% url 'works' %}" class="nav-link {% if request.path == url_works %}nav-link-active{% endif %}">{% trans "my works" %}</a>
                 {% endif %}
                 {% url 'contact' as url_contact %} 
-                <a href="{% url 'contact' %}" class="nav-link {% if request.path == url_contact %}nav-link-active{% endif %}">{% translate "contact" %}</a>
+                <a href="{% url 'contact' %}" class="nav-link {% if request.path == url_contact %}nav-link-active{% endif %}">{% trans "contact" %}</a>
             </nav> 
 
             <form action="{% url 'set_language' %}" class="change-language" method="post">{% csrf_token %}
@@ -26,7 +26,7 @@
                     {% get_language_info_list for LANGUAGES as languages %}
                     {% for language in languages %}
                         <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                            {{ language.code|upper }}  
+                            {{ language.code|upper }}
                         </option>
                     {% endfor %}
                 </select> 

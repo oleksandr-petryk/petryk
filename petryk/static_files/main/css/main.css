@@ -13,8 +13,7 @@ header {
 header p {
     margin: 24px 0 42px 0; 
     font-size: 24px;
-    line-height: 29px;
-    color: #728CA1;
+    line-height: 29px; 
 }
 header b {  
     font-size: 25px; 
@@ -204,8 +203,7 @@ footer {
     header p {
         margin: 24px 0 42px 0; 
         font-size: 20px;
-        line-height: 29px;
-        color: #728CA1;
+        line-height: 29px; 
     }
     .btn-icons .social-networks {
         width: min-content; 

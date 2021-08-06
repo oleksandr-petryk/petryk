@@ -12,12 +12,12 @@
 <div class="content">  
     <section class="container offer fix-navigation">
         <header>     
-            <b>{% translate "Petryk Oleksandr" %}</b>
-            <h1>{% translate "Web developer" %}</h1>
-            <p>{% translate "I develop both simple websites and complex web applications" %}</p>
+            <b>{% trans "Petryk Oleksandr" %}</b>
+            <h1>{% trans "Web developer" %}</h1>
+            <p>{% trans "I develop both simple websites and complex web applications" %}</p>
 
             <div class="btn-icons">
-                <a href="{% url 'contact' %}"><button class="btn-big">{% translate "write to me" %}</button></a>
+                <a href="{% url 'contact' %}"><button class="btn-big">{% trans "write to me" %}</button></a>
                 <div class="social-networks">
                     {% include 'base/includes/social-networks.html' %}
                 </div>
@@ -25,7 +25,7 @@
         </header>
 
         <div class="sasha-photo-wrapper">
-            <img src="{% static 'main/img/offer-img.png' %}" alt="{% translate 'Photo of Oleksandr' %}">
+            <img src="{% static 'main/img/offer-img.png' %}" alt="{% trans 'Photo of Oleksandr' %}">
         </div>
     </section>
 
@@ -39,15 +39,15 @@
         </div>
 
         <div>
-            <h2>{% translate "What is my goal?" %}</h2>
-            <p>{% translate "My goal is to create quality and efficient web applications, from scratch." %}</p>
-            <p>{% translate "I pay a lot of time and attention to site planning and configuration, as a result the site is easier to maintain and modify." %}</p>
+            <h2>{% trans "What is my goal?" %}</h2>
+            <p>{% trans "My goal is to create quality and efficient web applications." %}</p>
+            <p>{% trans "I pay a lot of time and attention to site planning and configuration, as a result the site is easier to maintain and modify." %}</p>
         </div>
     </section>
 
     {% if is_works %}
     <section class="container last-works">
-        <h2>{% translate "My last works" %}</h2>
+        <h2>{% trans "My last works" %}</h2>
         <div class="works-wrapper">
             {% include 'base/includes/work-card.html' %}
         </div> 
@@ -56,9 +56,9 @@
 
     <section class="container facts">
         <div>
-            <h2>{% translate "Intresting facts" %}</h2>
-            <p>{% translate "I made this site myself, including the design I did myself" %}</p>
-            <p>{% translate "SVG images take up much less memory than PNG" %}</p>
+            <h2>{% trans "Intresting facts" %}</h2>
+            <p>{% trans "I made this site myself, including the design I did myself" %}</p>
+            <p>{% trans "SVG images take up much less memory than PNG" %}</p>
         </div>
 
         <div>
