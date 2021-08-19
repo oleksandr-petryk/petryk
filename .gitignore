@@ -134,3 +134,4 @@ media/
 static/ 
 env/nginx/
 env/gunicorn/
+env/.env

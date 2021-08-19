@@ -3,13 +3,13 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-po-p*$9&j=kv)1b6zf2(a@3qd@qlnwy3x#zd=7lpqoktxhm@+g'
+SECRET_KEY = os.environ('SECRET_KEY')
 
 DEBUG = True
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-ALLOWED_HOSTS = ['192.168.1.11', '127.0.0.1'] 
+ALLOWED_HOSTS = ['*'] 
 
 INSTALLED_APPS = [
     'main',
