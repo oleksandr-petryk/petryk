@@ -130,7 +130,7 @@ dmypy.json
 # custom 
 petryk/static/admin/
 migrations/
-petryk/media/
-petryk/static/ 
+media/
+static/ 
 env/nginx/
 env/gunicorn/
