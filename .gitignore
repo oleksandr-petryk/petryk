@@ -60,10 +60,6 @@ coverage.xml
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-petryk/static/admin/
-petryk/*/migrations/
-petryk/media/
-petryk/static/
 
 # Flask stuff:
 instance/
@@ -131,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# custom 
+petryk/static/admin/
+migrations/
+petryk/media/
+petryk/static/ 
