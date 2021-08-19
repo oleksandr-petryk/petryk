@@ -7,11 +7,9 @@ SECRET_KEY = 'django-insecure-po-p*$9&j=kv)1b6zf2(a@3qd@qlnwy3x#zd=7lpqoktxhm@+g
 
 DEBUG = True
 
-WSGI_APPLICATION = 'petryk.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
-ALLOWED_HOSTS = ['192.168.1.11', '127.0.0.1']
-# ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ["petryk.me", "www.petryk.me"]
+ALLOWED_HOSTS = ['192.168.1.11', '127.0.0.1'] 
 
 INSTALLED_APPS = [
     'main',
@@ -38,7 +36,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'petryk.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {

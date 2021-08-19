@@ -104,7 +104,6 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
 venv/
 ENV/
 env.bak/
@@ -133,3 +132,5 @@ petryk/static/admin/
 migrations/
 petryk/media/
 petryk/static/ 
+env/nginx/
+env/gunicorn/
