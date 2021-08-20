@@ -2,8 +2,8 @@ from pathlib import Path
 import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-SECRET_KEY = os.environ('SECRET_KEY')
+ 
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = True
 
@@ -16,6 +16,7 @@ INSTALLED_APPS = [
     'about_me',
     'works',
     'contact',
+    'telegram_bot',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,13 +1,16 @@
-import json
-import telebot
 import os
-
-from config import *
+import json
+import telebot 
+ 
 from pathlib import Path
-from time import sleep
 from telebot import types
 
-bot = telebot.TeleBot(TOKEN)
+
+BOT_DIR = Path(__file__).resolve().parent
+USERS_FILE_NAME = 'users.json'
+USERS = BOT_DIR / USERS_FILE_NAME
+
+bot = telebot.TeleBot(os.environ.get('TELEGRAM_TOKEN'))
 
 markup = types.ReplyKeyboardMarkup(row_width=1)
 list_of_messages = types.KeyboardButton('/all_messages')
@@ -48,7 +51,8 @@ def send_welcome(message):
 
     user_is_unique(message)
     
-    bot.send_message(message.chat.id, "Hello I'm bot to watch your messages on the site petryk.me", reply_markup=markup)
+    bot.send_message(message.chat.id, "Hello I'm bot to watch your messages on the site petryk.me")
+    # bot.send_message(message.chat.id, "Hello I'm bot to watch your messages on the site petryk.me", reply_markup=markup)
 
 
 @bot.message_handler(commands=['last_message'])
@@ -63,15 +67,5 @@ def last_message(message):
     for i in range(10):
         bot.send_message(message.chat.id, f'{i} message')
 
-
-def send_new_message(new_message_from_site):
-    with open(USERS, 'r') as f:
-        users = json.load(f)
-
-        for user in users:
-            bot.send_message(user['user']['id'], new_message_from_site)
-
-
-
-
+ 
 bot.polling()

@@ -1,5 +1,5 @@
 <footer>{% load i18n %}
-    <form action="" method="post" class="container contact"> 
+    <form action="{% url 'contact' %}" method="post" class="container contact"> 
         {% csrf_token %}
         <div class="call-to-user">
             <h1>{% trans "Contact" %}</h1>
