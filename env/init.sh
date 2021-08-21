@@ -16,6 +16,11 @@ base_dir="$(dirname "$PWD")"
 
 
 
+echo "${RED}Put your secret keys, passwords to db, tokens, in .env.template${RED}"
+cp .env.template .env
+
+
+
 # Get neded variables
 
 echo -n "${CYAN}[add]${None} Enter domain name, for example 'petryk.me': "
