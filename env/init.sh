@@ -42,8 +42,8 @@ pip install -r requirements.txt
 
 # Create and fill servir files
 
-mkdir nginx gunicorn
-mkdir -p gunicorn/log
+mkdir nginx systemd
+mkdir -p systemd/log
 
 path_to_sock_file="/run/$project_name.sock"
  
@@ -66,7 +66,7 @@ echo "server {
     }
 }" >> nginx/$project_name
 
-## Gunicorn
+## systemd / Gunicorn
 echo "[Unit]
 Description=gunicorn socket
 
@@ -74,7 +74,7 @@ Description=gunicorn socket
 ListenStream=$path_to_sock_file
 
 [Install]
-WantedBy=sockets.target" >> gunicorn/$project_name.socket
+WantedBy=sockets.target" >> systemd/$project_name.socket
 
 echo "[Unit]
 Description=gunicorn daemon
@@ -82,13 +82,31 @@ Requires=$project_name.socket
 After=network.target
 
 [Service]
+EnvironmentFile=$base_dir/env/.env
 User=$user_to_run_gunicorn
 Group=$user_to_run_gunicorn
 WorkingDirectory=$base_dir/src
-ExecStart=$base_dir/env/env/bin/gunicorn --error-logfile $base_dir/env/gunicorn/log/error.log --access-logfile $base_dir/env/gunicorn/log/access.log --workers $gunicorn_workers_count  --bind unix:$path_to_sock_file config.wsgi:application  
+ExecStart=$base_dir/env/env/bin/gunicorn --error-logfile $base_dir/env/systemd/log/error.log --access-logfile $base_dir/env/systemd/log/access.log --workers $gunicorn_workers_count  --bind unix:$path_to_sock_file config.wsgi:application  
 
 [Install]
-WantedBy=multi-user.target" >> gunicorn/$project_name.service
+WantedBy=multi-user.target" >> systemd/$project_name.service
+
+## systemd / Telegram bot
+echo "[Unit]
+Description=Python bot service
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+EnvironmentFile=$base_dir/env/.env
+Type=simple
+ExecStart=$base_dir/src/start_bot.sh
+Restart=on-failure
+RestartSec=1
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target" >> systemd/$project_name\_bot.service
 
 
 
@@ -96,9 +114,13 @@ WantedBy=multi-user.target" >> gunicorn/$project_name.service
 
 sudo ln -s $PWD/nginx/$project_name /etc/nginx/sites-enabled  
 
-sudo ln -s $PWD/gunicorn/$project_name.socket /etc/systemd/system 
-sudo ln -s $PWD/gunicorn/$project_name.service /etc/systemd/system 
+sudo ln -s $PWD/systemd/$project_name.socket /etc/systemd/system 
+sudo ln -s $PWD/systemd/$project_name.service /etc/systemd/system 
+sudo ln -s $PWD/systemd/$project_name\_bot.service /etc/systemd/system 
 
 sudo service nginx restart
 sudo systemctl daemon-reload
+sudo systemctl enable petryk
+sudo systemctl enable petryk_bot
 sudo systemctl restart petryk
+sudo systemctl restart petryk_bot

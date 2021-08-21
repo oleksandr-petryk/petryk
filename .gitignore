@@ -134,4 +134,5 @@ media/
 static/ 
 env/nginx/
 env/gunicorn/
+env/systemd/
 env/.env
