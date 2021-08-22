@@ -106,7 +106,7 @@ msgid ""
 "These two technologies were my first in web development, I have been "
 "studying them since 2019. So I can do almost anything with their help."
 msgstr ""
-"Ці дві технології були моїми першими у веб -розробці, я вивчаю їх з 2019 "
+"Ці дві технології були моїми першими у веб розробці, я вивчаю їх з 2019 "
 "року. Тому я можу зробити майже все що завгодно з їхньою допомогою."
 
 #: templates/about_me/about_me.html:50
@@ -229,7 +229,7 @@ msgstr "Веб розробник"
 
 #: templates/main/main.html:17
 msgid "I develop both simple websites and complex web applications"
-msgstr "Я розробляю як прості веб -сайти, так і складні веб сайти"
+msgstr "Я розробляю як прості веб сайти, так і складні веб сайти"
 
 #: templates/main/main.html:20
 msgid "write to me"
