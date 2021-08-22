@@ -38,7 +38,7 @@ read gunicorn_workers_count
 
 
 # Set bot start file
-sed -i "s%replace_dir_to_rroject%$base_dir%g" $base_dir/src/start_bot.sh
+sed -i "s%replace_dir_to_rroject%$base_dir%g" $base_dir/env/start_bot.sh
 
 
 
@@ -134,4 +134,4 @@ sudo systemctl daemon-reload
 sudo systemctl enable petryk
 sudo systemctl enable petryk_bot
 sudo systemctl restart petryk
-sudo systemctl restart petryk_bot
+sudo systemctl restart petryk_bot 
