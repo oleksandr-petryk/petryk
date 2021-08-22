@@ -4,7 +4,7 @@ Source code of this site
 
 Fast setting
 
-- put your secret keys, passwords to db, tokens, in .env.template
+- put your secret keys, passwords to db, tokens, in .env
 - run the file env/init.sh
 
 ```shell

@@ -16,11 +16,6 @@ base_dir="$(dirname "$PWD")"
 
 
 
-echo "${RED}Put your secret keys, passwords to db, tokens, in .env.template${RED}"
-cp .env.template .env
-
-
-
 # Get neded variables
 
 echo -n "${CYAN}[add]${None} Enter domain name, for example 'petryk.me': "
@@ -38,7 +33,7 @@ read gunicorn_workers_count
 
 
 # Set bot start file
-sed -i "s%replace_dir_to_rroject%$base_dir%g" $base_dir/env/start_bot.sh
+sed -i "s%replace%$base_dir%g" $base_dir/env/start_bot.sh
 
 
 
