@@ -1,4 +1,4 @@
 #!/bin/bash 
 
-source /home/petryk/git/petryk/env/env/bin/activate
-exec python3 /home/petryk/git/petryk/src/telegram_bot/bot.py
+source replace_dir_to_rroject/env/env/bin/activate
+exec python3 replace_dir_to_rroject/src/telegram_bot/bot.py

@@ -37,10 +37,16 @@ read gunicorn_workers_count
 
 
 
+# Set bot start file
+sed -i "s%replace_dir_to_rroject%$base_dir%g" $base_dir/src/start_bot.sh
+
+
+
 # Create and activate virtualenviroment
 
 virtualenv env
-source env/bin/activate
+# source env/bin/activate
+. env/bin/activate
 pip install -r requirements.txt
 
 
