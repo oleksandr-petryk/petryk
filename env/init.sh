@@ -106,7 +106,7 @@ After=syslog.target network-online.target
 [Service]
 EnvironmentFile=$base_dir/env/.env
 Type=simple
-ExecStart=$base_dir/env/start_bot.sh
+ExecStart=$base_dir/src/start_bot.sh
 Restart=on-failure
 RestartSec=1
 KillMode=process
