@@ -29,11 +29,4 @@ class First(View):
             'works': Work.objects.order_by('-id')[:2],
             'is_works': is_works()
         }
-        return render(request, 'main/main.html', context) 
-
-    def post(self, request):
-        form = MessageFromUserForm(request.POST)
-        if form.is_valid():
-            form.save() 
-            
-        return redirect("/")
+        return render(request, 'main/main.html', context)  

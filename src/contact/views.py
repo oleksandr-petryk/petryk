@@ -3,8 +3,8 @@ from django.views.generic import View
 from .forms import MessageFromUserForm
 from .models import MessageFromUser
 from main.views import is_works 
-
 from telegram_bot.new_message import send_new_message
+
 
 class Contact(View):
     def get(self, request):
@@ -25,7 +25,7 @@ class Contact(View):
         form = MessageFromUserForm(request.POST)
         if form.is_valid():
             form.save() 
-
-        send_new_message('You have new message') 
+  
+        send_new_message(f"{request.POST.get('name')}\n{request.POST.get('email')}\n{request.POST.get('message')}") 
             
         return redirect("/")
