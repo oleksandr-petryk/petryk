@@ -12,8 +12,7 @@ domain_name=""
 project_name=""
 user_to_run_gunicorn=""
 gunicorn_workers_count=3 
-base_dir="$(dirname "$0")"  
-base_dir="$(dirname "$base_dir")"  
+base_dir="$(dirname "$PWD")"   
 
 
 
