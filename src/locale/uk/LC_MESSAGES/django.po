@@ -229,7 +229,7 @@ msgstr "Веб розробник"
 
 #: templates/main/main.html:17
 msgid "I develop both simple websites and complex web applications"
-msgstr "Я розробляю як прості веб -сайти, так і складні веб сайти"
+msgstr "Я розробляю як прості веб-сайти, так і складні веб-додатки"
 
 #: templates/main/main.html:20
 msgid "write to me"
@@ -245,7 +245,7 @@ msgstr "Яка моя мета?"
 
 #: templates/main/main.html:43
 msgid "My goal is to create quality and efficient web applications."
-msgstr "Моя мета - створити якісні та ефективні веб сайти."
+msgstr "Моя мета - створити якісні та ефективні веб-сайти."
 
 #: templates/main/main.html:44
 msgid ""
