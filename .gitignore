@@ -136,3 +136,7 @@ env/nginx/
 env/gunicorn/
 env/systemd/
 env/.env
+
+
+# telegram bot
+src/telegram_bot/users.json

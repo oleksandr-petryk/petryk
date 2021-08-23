@@ -8,19 +8,29 @@
     <meta name="keywords" content="Petryk Oleksandr, web developer, portfolio Petryk Oleksandr, Petryk Oleksandr web developer"> 
     <meta name="description" content="Petryk Oleksandr, web developer, portfolio Petryk Oleksandr, Petryk Oleksandr web developer"> 
  
-    <meta property="og:title" content="codecample">
+    <meta property="og:title" content="Petryk Oleksandr">
     <meta property="og:type" content="homepage">
-    <meta property="og:description" content="ready templates Html CSS JS">
-    <meta property="og:image" content="https://codexample.tech{% static 'base/img/codexample.png' %}">
-    <meta property="og:url" content="https://codexample.tech{{ web.get_absolute_url }}">
-    <meta property="og:site_name" content="codexample">
+    <meta property="og:description" content="Development of sites web applications">
+    <meta property="og:image" content="https://petryk.me{% static 'main/img/offer-img-a.png' %}">
+    <meta property="og:url" content="https://petryk.me">
+    <meta property="og:site_name" content="petryk.me">
     {% endblock %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-21V0TCK3VD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-21V0TCK3VD');
+    </script>
+    <!-- static files -->
     <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
     {% block links %}{% endblock %} 
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon"href="{% static 'base/img/favicon.ico' %}">
+    <link rel="icon"href="{% static 'base/img/favicon.ico' %}"> 
     <title>{% block title %}Petryk Oleksandr{% endblock %}</title>
 </head>
 <body>
