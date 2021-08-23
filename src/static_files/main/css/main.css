@@ -45,11 +45,12 @@ header b {
     justify-content: center;
     overflow: hidden;
     border-radius: 7px;
-}
-.offer img {  
-    height: 100%;
+} 
+.offer img {   
+    max-height: 550px;
     flex-shrink: 0;
     object-fit: cover;
+
 }
 
 /* my goal */
