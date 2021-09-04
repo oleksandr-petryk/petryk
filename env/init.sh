@@ -12,16 +12,15 @@ domain_name=""
 project_name=""
 user_to_run_gunicorn=""
 gunicorn_workers_count=3 
-base_dir="$(dirname "$PWD")"   
-
+base_dir="$(dirname "$PWD")"
 
 
 # Get neded variables
 
-echo -n "${CYAN}[add]${None} Enter domain name, for example 'petryk.me': "
+echo -n "${CYAN}[add]${None} Enter domain name, for example 'google.com': "
 read domain_name 
 
-echo -n "${CYAN}[add]${None} Enter project name, for example 'petryk': "
+echo -n "${CYAN}[add]${None} Enter project name, for example 'google': "
 read project_name
 
 echo -n "${CYAN}[add]${None} Enter user name, to run gunicorn: "
@@ -118,15 +117,15 @@ WantedBy=multi-user.target" >> systemd/$project_name\_bot.service
 
 # Creating a symbolic link for server files
 
-sudo ln -s $PWD/nginx/$project_name /etc/nginx/sites-enabled  
+su -c "ln -s $PWD/nginx/$project_name /etc/nginx/sites-enabled"
 
-sudo ln -s $PWD/systemd/$project_name.socket /etc/systemd/system 
-sudo ln -s $PWD/systemd/$project_name.service /etc/systemd/system 
-sudo ln -s $PWD/systemd/$project_name\_bot.service /etc/systemd/system 
+su -c "ln -s $PWD/systemd/$project_name.socket /etc/systemd/system" 
+su -c "ln -s $PWD/systemd/$project_name.service /etc/systemd/system" 
+su -c "ln -s $PWD/systemd/$project_name\_bot.service /etc/systemd/system" 
 
-sudo service nginx restart
-sudo systemctl daemon-reload
-sudo systemctl enable petryk
-sudo systemctl enable petryk_bot
-sudo systemctl restart petryk
-sudo systemctl restart petryk_bot 
+su -c "service nginx restart"
+su -c "systemctl daemon-reload"
+su -c "systemctl enable petryk"
+su -c "systemctl enable petryk_bot"
+su -c "systemctl restart petryk"
+su -c "systemctl restart petryk_bot" 
