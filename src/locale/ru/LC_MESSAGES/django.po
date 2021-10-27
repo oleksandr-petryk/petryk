@@ -37,8 +37,6 @@ msgid "Petryk Oleksandr"
 msgstr "Петрик Александр"
 
 #: templates/about_me/about_me.html:15
-#, fuzzy
-#| msgid "Age: 17 yeats old"
 msgid "Age: 17 years old"
 msgstr "Возраст: 17 лет"
 
