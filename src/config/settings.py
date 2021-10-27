@@ -9,7 +9,7 @@ DEBUG = True
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-ALLOWED_HOSTS = ['petryk.me', 'www.petryk.me'] 
+ALLOWED_HOSTS = ['petryk.me', 'www.petryk.me', '*'] 
 
 INSTALLED_APPS = [
     'main',

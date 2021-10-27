@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 19:57+0000\n"
+"POT-Creation-Date: 2021-10-27 12:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,11 +38,13 @@ msgid "Petryk Oleksandr"
 msgstr "Петрик Олександр"
 
 #: templates/about_me/about_me.html:15
-msgid "Age: 17 yeats old"
+#, fuzzy
+#| msgid "Age: 17 yeats old"
+msgid "Age: 17 years old"
 msgstr "Вік: 17 років"
 
 #: templates/about_me/about_me.html:16
-msgid "Contry: Ukraine"
+msgid "Country: Ukraine"
 msgstr "Країна: Україна"
 
 #: templates/about_me/about_me.html:17
@@ -179,7 +181,7 @@ msgstr "Я вмію складати кубик Рубіка"
 msgid "I love a music"
 msgstr "Я люблю музику"
 
-#: templates/about_me/about_me.html:78 
+#: templates/about_me/about_me.html:78
 msgid "I drink a lot of tea"
 msgstr "Я п'ю багато чаю"
 
@@ -198,14 +200,6 @@ msgstr "З будь -якими питаннями та пропозиціями
 #: templates/base/includes/contact-form.html:26
 msgid "send message"
 msgstr "Надіслати"
-
-#: templates/base/includes/contact.html:2
-msgid "Email:"
-msgstr "Електронна пошта:"
-
-#: templates/base/includes/contact.html:6
-msgid "Phone:"
-msgstr "Номер телефону:"
 
 #: templates/base/includes/nav.html:10
 msgid "home"
@@ -251,7 +245,9 @@ msgstr "Моя мета - створити якісні та ефективні 
 msgid ""
 "I pay a lot of time and attention to site planning and configuration, as a "
 "result the site is easier to maintain and modify."
-msgstr "Я приділяю багато часу та уваги плануванню та конфігурації сайту, в результаті чого його легше обслуговувати та модефікувати."
+msgstr ""
+"Я приділяю багато часу та уваги плануванню та конфігурації сайту, в "
+"результаті чого його легше обслуговувати та модефікувати."
 
 #: templates/main/main.html:50
 msgid "My last works"
@@ -264,3 +260,9 @@ msgstr "Я сам створив цей сайт, включаючи дизай�
 #: templates/main/main.html:61
 msgid "SVG images take up much less memory than PNG"
 msgstr "Зображення SVG займають набагато менше пам'яті, ніж PNG"
+
+#~ msgid "Email:"
+#~ msgstr "Електронна пошта:"
+
+#~ msgid "Phone:"
+#~ msgstr "Номер телефону:"
