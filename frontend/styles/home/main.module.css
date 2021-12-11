@@ -1,0 +1,10 @@
+.navigationWrapper,
+.foorerWrapper {
+    position: absolute;
+}
+.navigationWrapper {
+    top: 0;
+}
+.foorerWrapper {
+    bottom: 0;
+}
