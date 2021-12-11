@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Navigation = () => {
     return (
-        <div className="navigation">
+        <div className="navigation balance">
             <nav>
                <Link href="/">
                     <a>home</a> 

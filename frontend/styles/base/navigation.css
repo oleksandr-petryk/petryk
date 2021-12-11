@@ -1,29 +1,59 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+nav {
+    display: flex;
+}
+nav a {
+    color: var(--color);
+}
+nav a:not(:last-child) {
+    margin-right: 32px;
+}
+
+
+
 /* XS / Extra small */
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-
+    .navigation {
+        height: 80px;
+    }
 }
 
 /* SM / Small */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
+    .navigation {
+        height: 60px;
+    }
 }
 
 /* MD / Medium */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-   
+    .navigation {
+        height: 60px;
+    }
 }
 
 /* LG / Large */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-   
+    .navigation {
+        height: 45px;
+    }
 }
 
 /* XL / Extra large */
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
-
+    .navigation {
+        height: 45px;
+    }
 }
 
 /* XXL / Extra extra large */
 @media only screen and (min-width: 1401px) {
-
+    .navigation {
+        height: 45px;
+    }
 }
