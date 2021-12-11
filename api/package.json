@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "0.1",
+  "description": "API for petryk.me",
+  "main": "index.js",
+  "scripts": {
+      "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Petryk Oleksandr <sachapos50@gmail.com> (https://petryk.me)",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cores": "^0.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.1",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}
