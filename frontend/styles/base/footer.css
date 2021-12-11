@@ -1,21 +1,31 @@
 footer {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .footer-block {
     display: flex;
     justify-content: center;
+}
+.footer-block a {
+    color: var(--color);
+}
+.footer-block a:not(:last-child) {
+    margin-right: 32px;
 }
 
 
 
 /* XS / Extra small */
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-
+    footer {
+        margin-bottom: 25px;
+    }
 }
 
 /* SM / Small */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
+    footer {
+        margin-bottom: 25px;
+    }
 }
 
 /* MD / Medium */
