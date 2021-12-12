@@ -8,8 +8,8 @@
     --color: #fff;
     --color-revert: #000;
     --color-link: rgb(107, 129, 255);
-    --color-bold: rgb(46, 46, 46);
-    --color-title: rgb(42, 42, 42);
+    --color-bold: rgb(255, 255, 255);
+    --color-title: rgb(255, 255, 255);
 }
 
 p {
@@ -22,6 +22,7 @@ b {
 a {
     color: var(--color-link);
     font-size: 16px;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5 {
