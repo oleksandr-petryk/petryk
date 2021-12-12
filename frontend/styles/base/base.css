@@ -9,10 +9,10 @@
     --bg-eclipse: rgba(0, 0, 0, 0.4);
 }
 
-/* wquiment */
+/* equiment */
 .container {
     width: var(--container-width);
-    padding: var(--container-padding);
+    padding: 0 var(--container-padding);
 }
 .container-flugid {
     width: 100%;
