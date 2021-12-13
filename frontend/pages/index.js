@@ -2,11 +2,10 @@ import PropTypes from 'prop-types'
 import Navigation from '../components/Base/Navigation.js'
 import Footer from '../components/Base/Footer.js'
 import BlankLayout from '../components/Layouts/BlankLayout.js'
+import Background from '../components/Background/Background.js'
 
 import cls from '../styles/home/main.module.css'
-import roadImage from '../public/road-image.jpg'
 
-console.log(roadImage)
 
 const Home = () => {
     return (
@@ -16,10 +15,7 @@ const Home = () => {
                     <Navigation />
                 </div>
 
-                <div className={cls.background_wrapper}>
-                    <img src={roadImage.src} alt="" />
-                    <div className={cls.background_eclipse}></div>
-                </div>
+                <Background />
 
                 <header className={cls.header}>
                     <div className={cls.inscription}>
