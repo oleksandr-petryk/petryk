@@ -7,35 +7,6 @@
 
 
 
-# Check if pachage is installed
-if ! dpkg -s 'sudo' >/dev/null 2>&1; then
-  echo 'You may to install sudo'
-  read x 
-fi
-if ! dpkg -s 'nginx' >/dev/null 2>&1; then
-  echo 'You may to install nginx'
-  read x 
-fi
-if ! dpkg -s 'nginx' >/dev/null 2>&1; then
-  echo 'You may to install nginx'
-  read x 
-fi
-
-
-
-# Create needed dirs
-if [ ! -d 'nginx' ]; then 
-    mkdir nginx
-fi
-if [ ! -d 'systemd' ]; then 
-    mkdir systemd
-fi
-if [ ! -d 'systemd/log' ]; then 
-    mkdir systemd/log
-fi
-
-
-
 # Fill Nginx config
 echo "# Next.js / Frontend
 server {

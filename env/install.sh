@@ -23,7 +23,7 @@ echo "BASE_DIR='$( dirname  ${PWD})'
 
 PROJECT_NAME='Petryk'
 
-PORT=${PORT}
+NEXT_PORT=${PORT}
 
 DOMAIN_NAME='${DOMAIN_NAME}'
 
