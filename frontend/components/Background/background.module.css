@@ -18,8 +18,8 @@
     object-fit: cover;
 }
 .background_eclipse {
-    background: rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
     height: 100%;
     width: 100%;
     position: absolute;
