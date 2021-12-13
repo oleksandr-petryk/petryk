@@ -8,7 +8,7 @@ const BaseLayout = ({children}) => {
         <>
             {/* block to separate navigation+content form footer */}
             <div className="wrapper">
-                <div>
+                <div className="separate">
                     {/* navigation */}
                     <Navigation />
 
