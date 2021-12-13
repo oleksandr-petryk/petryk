@@ -10,7 +10,7 @@ Scripts:
 
 ## **Fast setup for development**
 
-- run [./install.sh](./install.sh "link to the install.sh file") file:
+- run [`./install.sh`](./install.sh "link to the install.sh file") file:
 
     ```shell
     . ./install.sh
