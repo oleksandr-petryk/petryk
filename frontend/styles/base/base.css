@@ -14,6 +14,9 @@
     width: var(--container-width);
     padding: 0 var(--container-padding);
 }
+.container:not(:last-child) {
+    margin-bottom: 20px;
+}
 .container-flugid {
     width: 100%;
 }
@@ -47,7 +50,7 @@
 @media only screen and (min-width: 0px) and (max-width: 480px) {
     * {
         --container-width: 100%;
-        --container-padding: 16px;
+        --container-padding: 20px;
     }    
 }
 

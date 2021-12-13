@@ -20,7 +20,7 @@ const Navigation = () => {
                         className={
                             router == '/' 
                                 ? "navigation-active"
-                                : '123'
+                                : null
                         } 
                     >
                         home
@@ -41,9 +41,9 @@ const Navigation = () => {
                     </a> 
                 </Link>
 
-                <Link href="/">
+                {/* <Link href="/">
                     <a>works</a> 
-                </Link> 
+                </Link>  */}
             </nav>
         </div>
     )
