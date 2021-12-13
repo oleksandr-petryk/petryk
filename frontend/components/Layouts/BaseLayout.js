@@ -17,7 +17,9 @@ const BaseLayout = ({children}) => {
                 </div>
 
                 {/* footer */}
-                <Footer />
+                <div className="footer-margin">
+                    <Footer />
+                </div>
             </div>
         </>
     )
