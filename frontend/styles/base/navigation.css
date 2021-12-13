@@ -14,6 +14,11 @@ nav a:not(:last-child) {
     margin-right: 32px;
 }
 
+/* activa */
+.navigation-active {
+    height: 27px;
+    border-bottom: 1.5px solid var(--color);
+}
 
 
 /* XS / Extra small */
