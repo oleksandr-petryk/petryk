@@ -10,6 +10,8 @@
     --color-link: rgb(107, 129, 255);
     --color-bold: rgb(255, 255, 255);
     --color-title: rgb(255, 255, 255);
+
+    color: var(--color);
 }
 
 p {
