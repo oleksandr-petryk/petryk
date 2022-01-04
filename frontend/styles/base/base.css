@@ -8,6 +8,10 @@
     --bg-blur: 24px;
     --bg-eclipse: rgba(0, 0, 0, 0.4);
 }
+html {
+    height: min-content;
+}
+
 
 /* equiment */
 .container {
@@ -25,7 +29,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
 .wrapper {
     display: flex;
     align-items: center;
@@ -36,6 +39,7 @@
     width: 100%;
 
     position: relative;
+    overflow: hidden;
 }
 .separate {
     display: flex;
