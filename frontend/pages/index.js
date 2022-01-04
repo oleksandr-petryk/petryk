@@ -10,12 +10,15 @@ import cls from '../styles/home/main.module.css'
 
 const Home = () => {
     useEffect(() => {
+        const vh = window.innerHeight * 0.01;
+        const wrapper = document.querySelector('.wrapper')
         window.addEventListener('resize', () => {
-            const vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            vh = window.innerHeight * 0.01;
+            wrapper.style.minHeight = '0'
+            wrapper.style.height = vh * 100 + 'px'
         })
     }, [])
-
+    
     return (
         <BlankLayout>
             <div className="container">
@@ -36,14 +39,6 @@ const Home = () => {
                     <Footer />
                 </div>
             </div>
-            <style jsx global>
-                {`
-                .wrapper {
-                    min-height: 0;
-                    height: calc(var(--vh, 1vh) * 100);
-                }
-                `}
-            </style>
         </BlankLayout>
     )
 }
