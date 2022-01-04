@@ -5,7 +5,7 @@ import '../styles/base/navigation.css'
 import '../styles/base/typography.css'
 
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) { 
     return (
         <Component {...pageProps} />
     )

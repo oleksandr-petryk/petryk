@@ -9,6 +9,7 @@ nav {
 }
 nav a {
     color: var(--color);
+    font-weight: 700;
 }
 nav a:not(:last-child) {
     margin-right: 32px;
@@ -17,7 +18,7 @@ nav a:not(:last-child) {
 /* activa */
 .navigation-active {
     height: 27px;
-    border-bottom: 1.5px solid var(--color);
+    border-bottom: 2px solid var(--color);
 }
 
 

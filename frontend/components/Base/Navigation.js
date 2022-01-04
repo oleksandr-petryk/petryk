@@ -6,10 +6,6 @@ import { useRouter } from 'next/router'
 const Navigation = () => {
     const router = useRouter().route
 
-    console.log(router, '/')
-    console.log(router == '/')
-
-
     return (
         <div className="navigation balance">
             <nav>
