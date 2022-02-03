@@ -12,14 +12,17 @@ class MyDocument extends Document {
 
                     {/* Global site tag (gtag.js) - Google Analytics */}
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-21V0TCK3VD"></script>
-                    <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-21V0TCK3VD', { page_path: window.location.pathname });
+                            `,
+                        }}
+                    />
 
-                    gtag('config', 'G-21V0TCK3VD');
-                    </script>
-                    
                     <title>Petryk Oleksandr</title>
                 </Head>
                 <body>
