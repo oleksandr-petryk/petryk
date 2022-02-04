@@ -8,6 +8,6 @@ services:
     container_name: "frontend_petryk"
     ports:
       - "3005:3005"
-    command: bash -c "npm run build && npm run start"
+    command: bash -c "npm run build && npm run start -- -p $FRONTEND_PORT"
     working_dir: /app
     restart: always

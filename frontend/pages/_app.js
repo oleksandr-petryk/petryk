@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import '../styles/base/base.css'
 import '../styles/base/footer.css'
 import '../styles/base/navigation.css'
@@ -9,11 +8,6 @@ function MyApp({ Component, pageProps }) {
     return (
         <Component {...pageProps} />
     )
-}
-
-MyApp.propTypes = {
-    Component: PropTypes.func,
-    pageProps: PropTypes.object,
 }
 
 
