@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  frontend_petryk:
+    build:
+      context: "../frontend"
+      dockerfile: "Dockerfile"
+    container_name: "frontend_petryk"
+    ports:
+      - "3005:3005"
+    command: bash -c "npm run build && npm run start"
+    working_dir: /app
+    restart: always
