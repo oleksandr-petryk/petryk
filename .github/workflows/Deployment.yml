@@ -14,7 +14,7 @@ on:
  
 
 jobs:
-  push:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repo
@@ -24,8 +24,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_SECRET }}
-          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/petryk/www/petryk
             git pull
