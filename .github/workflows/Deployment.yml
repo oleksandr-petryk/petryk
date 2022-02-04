@@ -19,8 +19,7 @@ jobs:
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
-      - name: Install doctl
-      - name: Deploy Stack
+      - name: Deploy on VPS
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
