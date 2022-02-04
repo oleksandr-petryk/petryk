@@ -1,8 +1,4 @@
-import PropTypes from 'prop-types'
 import BaseLayout from '../components/Layouts/BaseLayout.js'
-import Background from '../components/Background/Background.js'
-
-import cls from '../styles/about/about.module.css'
 
 
 const About = () => {
