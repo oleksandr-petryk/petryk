@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
 import { useEffect } from 'react'
+import Head from 'next/head'
 import Navigation from '../components/Base/Navigation.js'
 import Footer from '../components/Base/Footer.js'
 import BlankLayout from '../components/Layouts/BlankLayout.js'
@@ -25,6 +25,12 @@ const Home = () => {
     
     return (
         <BlankLayout>
+            <Head>
+                <meta name="keywords" content="Petryk Oleksandr, Petryk Oleksandr web developer" />
+                <meta name="description" content="Official web site of web developer - Petryk Oleksandr" />
+                <title>Petryk Oleksandr / Web developer</title>
+            </Head>
+
             <div className="container">
                 <div className={cls.navigationWrapper}>
                     <Navigation />
