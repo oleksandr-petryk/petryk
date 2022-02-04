@@ -13,7 +13,7 @@ server {
 
     location / {
         proxy_set_header Host  \$host; 
-        proxy_pass http://127.0.0.1:${FRONTEND_PORT};
+        proxy_pass http://localhost:${FRONTEND_PORT};
     }
 }
 " >| "nginx/${PROJECT_NAME}.conf"

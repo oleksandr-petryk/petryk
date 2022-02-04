@@ -15,9 +15,9 @@ const About = () => {
     return (
         <BaseLayout>
             <Head>
-                <meta name="keywords" content="Petryk Oleksandr, Petryk Oleksandr web developer" />
-                <meta name="description" content="Official web site of web developer - Petryk Oleksandr" />
-                <title>Petryk Oleksandr / Web developer</title>
+                <meta name="keywords" content="about Petryk Oleksandr, CV of Petryk Oleksandr" />
+                <meta name="description" content="Description of technical skills of Petryk Oleksandr" />
+                <title>About Petryk Oleksandr</title>
             </Head>
             {newBG}
 
