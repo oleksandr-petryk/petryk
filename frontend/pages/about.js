@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import BaseLayout from '../components/Layouts/BaseLayout.js'
 
 
@@ -13,6 +14,11 @@ const About = () => {
     )
     return (
         <BaseLayout>
+            <Head>
+                <meta name="keywords" content="Petryk Oleksandr, Petryk Oleksandr web developer" />
+                <meta name="description" content="Official web site of web developer - Petryk Oleksandr" />
+                <title>Petryk Oleksandr / Web developer</title>
+            </Head>
             {newBG}
 
             <div className="container">
