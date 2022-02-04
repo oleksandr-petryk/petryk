@@ -1,0 +1,34 @@
+name: Deployment into VPS
+
+on:
+  push:
+    branches:
+      - main
+
+    paths-ignore:
+      - 'api/**'
+      - '.github/**'
+      - 'README.md'
+      - '.gitignore'
+      - 'LICENSE'
+ 
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+      - name: Install doctl
+      - name: Deploy Stack
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_SECRET }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /home/petryk/www/petryk
+            git pull
+            cd bin
+            . ./deploy.sh
