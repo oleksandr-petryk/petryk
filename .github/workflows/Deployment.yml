@@ -17,8 +17,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+
+      - name: Build image
+        run: . ./bin/build.sh
+
       - name: Checkout the repo
         uses: actions/checkout@v2
+
       - name: Deploy on VPS
         uses: appleboy/ssh-action@master
         with:
