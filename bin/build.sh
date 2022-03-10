@@ -1,8 +1,7 @@
 #!/bin/bash
 
 
-
-if [ ! -f "./bin/.env" ]; then 
+if [ ! -f "./bin/.env" ]; then
     cat ./bin/.env.template > bin/.env1
 fi
 
