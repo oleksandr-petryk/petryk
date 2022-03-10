@@ -5,16 +5,9 @@ on:
     branches:
       - main
 
-    paths-ignore:
-      - 'api/**'
-      - '.github/**'
-      - 'README.md'
-      - '.gitignore'
-      - 'LICENSE'
-
-
 jobs:
-  deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,6 +17,10 @@ jobs:
           ls -la
           . ./bin/build.sh
 
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
 
