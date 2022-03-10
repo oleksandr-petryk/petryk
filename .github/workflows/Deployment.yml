@@ -1,17 +1,9 @@
 name: Deployment into VPS
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-
-    paths-ignore:
-      - 'api/**'
-      - '.github/**'
-      - 'README.md'
-      - '.gitignore'
-      - 'LICENSE'
-
 
 jobs:
   deploy:
