@@ -15,19 +15,19 @@ const Home = () => {
         vh = window.innerHeight * 0.01;
         wrapper.style.minHeight = '0'
         wrapper.style.height = vh * 100 + 'px'
-        
+
         window.addEventListener('resize', () => {
             vh = window.innerHeight * 0.01;
             wrapper.style.minHeight = '0'
             wrapper.style.height = vh * 100 + 'px'
         })
     }, [])
-    
+
     return (
         <BlankLayout>
             <Head>
                 <meta name="keywords" content="Petryk Oleksandr, Petryk Oleksandr web developer" />
-                <meta name="description" content="Official web site of web developer - Petryk Oleksandr" />
+                <meta name="description" content="Website of web developer - Petryk Oleksandr" />
                 <title>Petryk Oleksandr / Web developer</title>
             </Head>
 
@@ -54,4 +54,4 @@ const Home = () => {
 }
 
 
-export default Home 
+export default Home
