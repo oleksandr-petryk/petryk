@@ -50,7 +50,7 @@ const About = () => {
       <div className="container">
         <h2>Skills</h2>
 
-        <p>I like good website architecture. I separete backend or API and frontend parts of website. To create this I use:</p>
+        <p>Languages &amp; frameworks:</p>
 
         <ul>
           <li>HTML / CSS</li>
