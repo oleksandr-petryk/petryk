@@ -3,75 +3,84 @@ import BaseLayout from '../components/Layouts/BaseLayout.js'
 
 
 const About = () => {
-    const newBG = (
-        <style jsx global>
-            {`
-                body{
-                    background: #1B2735;
-                }
-            `}
-        </style>
-    )
-    return (
-        <BaseLayout>
-            <Head>
-                <meta name="keywords" content="about Petryk Oleksandr, CV of Petryk Oleksandr" />
-                <meta name="description" content="Description of technical skills of Petryk Oleksandr" />
-                <title>About Petryk Oleksandr</title>
-            </Head>
-            {newBG}
+  const newBG = (
+    <style jsx global>
+      {`
+        body{
+          background: #1B2735;
+        }
+      `}
+    </style>
+  )
+  return (
+    <BaseLayout>
+      <Head>
+        <meta name="keywords" content="about Petryk Oleksandr, CV of Petryk Oleksandr" />
+        <meta name="description" content="Description of technical skills of Petryk Oleksandr" />
+        <title>About Petryk Oleksandr</title>
+      </Head>
+      {newBG}
 
-            <div className="container">
+      <div className="container">
+        <h2>About me</h2>
 
-                <h2>About me</h2>
+        <p>
+          I am 18 years old. I am a web developer, I have been doing this for three years. I like to
+          constantly learn something new and improve. I like to work on interesting projects, in which
+          case I can fully focus on the tasks performed. I like cleanliness in projects, when everything
+          is in place and when all the components work together. I like to plan everything to go to the
+          goal step by step. I like to spend time actively, go in for sports. I have no bad habits. I like to
+          work in team. I like to listen music.
+        </p>
+      </div>
 
-                <p>
-                    Four years ago, I was a simple guy who didn't know what to do after school, but it so happened that I got acquainted with programming, that's how it all started. Now I am working on my projects and looking for a job, I want to work in a big team. I like to interact with team members and achieve a common goal. The environment plays a big role so I think I would be even more productive in the team. I'm learning fast enough. I also respect the opinions and beliefs of others, so I don't usually cause misunderstandings.
-                </p>
-                
-            </div>
+      <div className="container">
+        <h2>Languages</h2>
 
-            <div className="container">
+        <p className="text-clean">I know three languages:</p>
 
-                <h2>Languages</h2>
+      <ul>
+          <li>Ukrainian / native</li>
+          <li>English / B2</li>
+        </ul>
 
-                <p className="text-clean">I know three languages:</p>
+        <p>I really like to learn and use English, it helpful when I read documentation etc.</p>
+      </div>
 
-                <ul>
-                    <li>Ukrainian / native</li>
-                    <li>Russian / native</li>
-                    <li>English / B2</li>
-                </ul>
+      <div className="container">
+        <h2>Skills</h2>
 
-                <p>I really like to learn and use English, it helpful when I read documentation etc.</p>
-                
-            </div>
+        <p>I like good website architecture. I separete backend or API and frontend parts of website. To create this I use:</p>
 
-            <div className="container">
+        <ul>
+          <li>HTML / CSS</li>
+          <li>JavaScript (TypeScript, Node.js, React.js, Next.js, Redux, Express.js, Sequelize, Prisma)</li>
+          <li>Python (Django, DRF)</li>
+          <li>C++ (Basics: OOP, pointers)</li>
+        </ul>
 
-                <h2>Skills</h2>
+        <p>Other tools:</p>
 
-                <p>I like good website architecture. I separete backend or API and frontend parts of website. To create this I use:</p>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>Docker</li>
+          <li>SSH</li>
+          <li>VIM</li>
+        </ul>
+      </div>
 
-                <ul>
-                    <li>Express.js - to create backend / API </li>
-                    <li>React.js / Next.js - to create user interfaces and SSR</li>
-                </ul>
+      <div className="container">
+        <h2>Motivation</h2>
 
-                <p>Of course I know HTML and CSS. I used Python(Django) to write a backend, but now I'm starting to use Node. Yes I know also Python.</p>
-
-                <p>Ready product require to server, so I can set up Linux servers, I use:</p>
-
-                <ul>
-                    <li>SSH - to interact with the server</li>
-                    <li>VIM - to edit data in the server, I like it</li>
-                    <li>Nginx - I use it as web server</li>
-                </ul>
-
-            </div>
-            
-        </BaseLayout>
-    )
+        <p>
+          I want to take part in the development of a commercial project, it will be useful for me to gain
+          new experience. In return, the company will be able to hire a good developer who will do his
+          job effectively and bring the company a profit. Since I plan to develop, in the future I can raise
+          my level and work on more complex projects, which will be beneficial for the company.
+        </p>
+      </div>
+    </BaseLayout>
+  )
 }
 
 
