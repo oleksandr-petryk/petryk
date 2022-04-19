@@ -1,19 +1,15 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-
-const BlankLayout = ({children}) => {
-    return (
-        <>
-            <div className="wrapper">
-                {children}
-            </div>
-        </>
-    )
-}
+const BlankLayout = ({ children }) => (
+  <>
+    <div className="wrapper">
+      {children}
+    </div>
+  </>
+);
 
 BlankLayout.propTypes = {
-    children: PropTypes.node,
-}
+  children: PropTypes.node,
+};
 
-
-export default BlankLayout
+export default BlankLayout;
