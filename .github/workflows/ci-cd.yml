@@ -24,7 +24,7 @@ jobs:
   build-image:
     runs-on: ubuntu-latest
     name: Build and push Docker image
-    needs: api-testing
+    needs: lint-code
     steps:
       - uses: actions/checkout@v2
 
