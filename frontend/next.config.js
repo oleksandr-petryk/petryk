@@ -1,9 +1,8 @@
-const GITHUB_USER_URL = process.env.GITHUB_USER_URL
-
+const { GITHUB_USER_URL } = process.env;
 
 module.exports = {
-    reactStrictMode: true,
-    env: {
-        GITHUB_USER_URL,
-    }
-}
+  reactStrictMode: true,
+  env: {
+    GITHUB_USER_URL,
+  },
+};

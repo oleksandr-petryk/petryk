@@ -1,6 +1,5 @@
-import Head from 'next/head'
-import BaseLayout from '../components/Layouts/BaseLayout.js'
-
+import Head from 'next/head';
+import BaseLayout from '../components/Layouts/BaseLayout.js';
 
 const About = () => {
   const newBG = (
@@ -11,7 +10,8 @@ const About = () => {
         }
       `}
     </style>
-  )
+  );
+
   return (
     <BaseLayout>
       <Head>
@@ -39,7 +39,7 @@ const About = () => {
 
         <p className="text-clean">I know three languages:</p>
 
-      <ul>
+        <ul>
           <li>Ukrainian / native</li>
           <li>English / B2</li>
         </ul>
@@ -63,11 +63,13 @@ const About = () => {
           <li>Database: PostgreSQL</li>
           <li>Operating System: Linux</li>
           <li>Methodologies: Kanban, CI/CD</li>
-          <li>Other knowledge: JWT, OAtuh2.0, unit &amp; Integration testing </li>
+          <li>Other knowledge: JWT, OAuth2.0, unit &amp; Integration testing </li>
           <li>Bling typing</li>
         </ul>
 
-        <p>My main technology stack is Node.js (JS, TS), but other than that I really like C++, it's like a hobby.</p>
+        <p>
+          My main technology stack is Node.js (JS, TS), but other than that I really like C++, it&apos;s like a hobby.
+        </p>
       </div>
 
       <div className="container">
@@ -81,8 +83,7 @@ const About = () => {
         </p>
       </div>
     </BaseLayout>
-  )
-}
+  );
+};
 
-
-export default About
+export default About;
