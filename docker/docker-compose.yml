@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  frontend_petryk:
+    image: ghcr.io/sasha-hk/petryk-frontend:latest
+    container_name: "frontend_petryk"
+    ports:
+      - "3005:3005"
+    working_dir: /app
+    restart: always
+    env_file: .env
