@@ -25,7 +25,7 @@ const About = () => {
         <h2>About me</h2>
 
         <p>
-          I am 18 years old. I am a web developer, I have been doing this for three years. I like to
+          I am a web developer, I have been doing this for three years. I like to
           constantly learn something new and improve. I like to work on interesting projects, in which
           case I can fully focus on the tasks performed. I like cleanliness in projects, when everything
           is in place and when all the components work together. I like to plan everything to go to the
@@ -50,23 +50,24 @@ const About = () => {
       <div className="container">
         <h2>Skills</h2>
 
-        <p>Languages &amp; frameworks:</p>
+        <p>Behind my back I have an experience in working with:</p>
 
         <ul>
           <li>HTML / CSS</li>
-          <li>JavaScript (TypeScript, Node.js, React.js, Next.js, Redux, Express.js, Sequelize, Prisma)</li>
-          <li>Python (Django, DRF)</li>
+          <li>Node.js (JavaScript, TypeScript)</li>
+          <li>Front-end (React.js, Next.js, Redux)</li>
+          <li>Back-end (Express.js, Nest.js, Sequelize, Prisma, Jest.js)</li>
           <li>C++ (Basics: OOP, pointers)</li>
+          <li>Computer Science: Algorithms &amp; Data Structures, OOP,  UNIX, HTTP</li>
+          <li>Dev tools: GIT &amp; GitHub, Docker, VIM, SSH, VS Code</li>
+          <li>Database: PostgreSQL</li>
+          <li>Operating System: Linux</li>
+          <li>Methodologies: Kanban, CI/CD</li>
+          <li>Other knowledge: JWT, OAtuh2.0, unit &amp; Integration testing </li>
+          <li>Bling typing</li>
         </ul>
 
-        <p>Other tools:</p>
-
-        <ul>
-          <li>Git / GitHub</li>
-          <li>Docker</li>
-          <li>SSH</li>
-          <li>VIM</li>
-        </ul>
+        <p>My main technology stack is Node.js (JS, TS), but other than that I really like C++, it's like a hobby.</p>
       </div>
 
       <div className="container">
