@@ -9,7 +9,7 @@ footer {
     justify-content: center;
 }
 .footer-block a {
-    color: var(--color);
+  color: var(--color);
 }
 .footer-block a:not(:last-child) {
     margin-right: 32px;
@@ -19,6 +19,10 @@ footer {
 
 /* XS / Extra small */
 @media only screen and (min-width: 0px) and (max-width: 480px) {
+    .footer-block a:not(:last-child) {
+      margin-right: 12px;
+    }
+
     footer {
         margin-bottom: 25px;
     }
@@ -33,12 +37,12 @@ footer {
 
 /* MD / Medium */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-   
+
 }
 
 /* LG / Large */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-   
+
 }
 
 /* XL / Extra large */
