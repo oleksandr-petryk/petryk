@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   release:
-    types: [published]
+    types: [prereleased]
 
 jobs:
   lint-code:
@@ -14,32 +14,26 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
-
       - name: Install packages
         run: yarn install
-
       - name: Lint code
         run: yarn run lint
-
   build-image:
     runs-on: ubuntu-latest
     name: Build and push Docker image
     needs: lint-code
     steps:
       - uses: actions/checkout@v2
-
       - name: Login to Github Packages
         env:
           CR_PAT: ${{ secrets.GH_PACKAGES_TOKEN }}
         run: |
           echo $CR_PAT | docker login ghcr.io -u petryk --password-stdin
-
       - name: Build image and push it to GitHub Packages
         run: |
           cd frontend
           docker build . --tag ghcr.io/sasha-hk/petryk-frontend:latest
           docker push ghcr.io/sasha-hk/petryk-frontend:latest
-
   deploy:
     name: Deploy
     needs: build-image
@@ -47,7 +41,6 @@ jobs:
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
-
       - name: Deploy on VPS
         uses: appleboy/ssh-action@master
         with:

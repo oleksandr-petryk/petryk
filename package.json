@@ -1,13 +1,29 @@
 {
-  "name": "style",
-  "version": "1.0.0",
+  "name": "petryk-website",
+  "private": true,
+  "description": "Oleksandr Petryk's website",
+  "version": "0.2.0",
   "main": "index.js",
-  "repository": "https://github.com/Sasha-hk/petryk.git",
+  "repository": "https://github.com/petryk/petryk.git",
   "author": "Petryk Oleksandr <sachapos50@gmail.com> (https://petryk.me)",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "prepare": "husky install"
+  },
+  "dependencies": {
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.24",
+    "@types/react-dom": "18.0.8",
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.1",
+    "next": "13.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.8.4"
   },
   "devDependencies": {
     "@commitlint/config-angular": "^16.2.3",
@@ -20,29 +36,5 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint . --ext .ts,.tsx,.js,.jsx"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-angular"
-    ],
-    "rules": {
-      "type-enum": [
-        2,
-        "always",
-        [
-          "build",
-          "ci",
-          "docs",
-          "feat",
-          "fix",
-          "perf",
-          "refactor",
-          "revert",
-          "style",
-          "test",
-          "meta"
-        ]
-      ]
-    }
   }
 }

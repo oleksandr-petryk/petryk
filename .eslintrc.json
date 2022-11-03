@@ -1,29 +1,3 @@
 {
-  "root": true,
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "plugin:react/recommended",
-    "xo"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": "latest"
-  },
-  "plugins": [
-    "react"
-  ],
-  "rules": {
-    "object-curly-spacing": ["error", "always"],
-    "max-len": ["error", { "code": 120 }],
-    "indent": ["error", 2],
-    "new-cap": 0,
-    "no-unused-vars": 0,
-    "semi": ["warn", "always"],
-    "react/react-in-jsx-scope": "off"
-  }
+  "extends": "next/core-web-vitals"
 }
