@@ -1,21 +1,95 @@
+@config "../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-family: theme('fontFamily.Nunito'), theme('fontFamily.base');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weigth: theme('titles.weight');
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+  font-size: theme('titles.h1');
 }
 
-@media (prefers-color-scheme: dark) {
+h2 {
+  font-size: theme('titles.h2');
+}
+
+h3 {
+  font-size: theme('titles.h3');
+}
+
+h4 {
+  font-size: theme('titles.h4');
+}
+
+h5 {
+  font-size: theme('titles.h5');
+}
+
+/* Containers */
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: none;
+}
+
+.container-heading {
+  margin-top: 100px;
+}
+
+/* 2Xl / TV */
+@media only screen and (max-width: theme('screens.2xl.max')) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+
+/* XL / Desktop */
+@media only screen and (max-width: theme('screens.xl.max')) {
+  html,
+  body {}
+}
+
+/* LG / Laptop */
+@media only screen and (max-width: theme('screens.lg.max')) {
+  html,
+  body {}
+
+  .container {
+    @apply px-4;
+  }
+}
+
+/* MD / Tablets */
+@media only screen and (max-width: theme('screens.md.max')) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+/* SM / Phone */
+@media only screen and (max-width: theme('screens.sm.max')) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +97,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
