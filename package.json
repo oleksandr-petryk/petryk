@@ -15,11 +15,13 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@commitlint/config-angular": "^17.2.0",
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/parser": "^5.42.0",
     "autoprefixer": "^10.4.12",
+    "commitlint": "^17.2.0",
     "eslint": "^8.26.0",
     "eslint-config-next": "^13.0.2",
     "eslint-config-xo": "^0.42.0",
