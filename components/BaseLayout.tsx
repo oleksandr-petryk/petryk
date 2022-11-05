@@ -9,14 +9,16 @@ export const BaseLayout: NextPage<{
   transparentNav?: boolean
 }> = ({ children, transparentNav }) => {
   return (
-    <>
-      <div>
-        <NavBar transparent={transparentNav} />
+    <div className='
+      min-h-full
+      2xl:py-20
+      sm:py-4
+    '>
+      <NavBar transparent={transparentNav} />
 
-        <Content>
-          { children }
-        </Content>
-      </div>
-    </>
+      <Content className='h-full'>
+        { children }
+      </Content>
+    </div>
   )
 }

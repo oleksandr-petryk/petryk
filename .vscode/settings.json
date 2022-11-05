@@ -12,8 +12,13 @@
     "Oleksandr",
     "Petryk",
     "prereleased",
+    "rehype",
     "Roboto",
+    "Sambir",
     "Segoe",
     "tailwindcss"
+  ],
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
   ]
 }
