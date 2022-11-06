@@ -2,7 +2,7 @@
 
 Software engineer, Sambir Collage of Economics and Information Technology
 
-From Sep 2019, to Jun 2023
+*From Sep 2019, to Jun 2023*
 
 ## Experience
 
@@ -18,7 +18,7 @@ Achievements:
 - Rewrote SSR for Vue when migrating from Vue2 to Vue3
 - Communicated with customer in English
 
-From Apr 2022, to now
+*From Apr 2022, to now*
 
 ## Languages
 
