@@ -1,5 +1,3 @@
-# About me
-
 ## Education
 
 Software engineer, Sambir Collage of Economics and Information Technology
@@ -7,7 +5,8 @@ From Sep, 2019, to Jun, 2023
 
 ## Experience
 
-Worked on OpenID provider, based on Express.js. There were 3 Vue.js developers in the team, me as a back-end developer and another experienced back-end developer.
+Worked on OpenID provider, based on Express.js. There were 3 Vue.js developers
+in the team, me as a back-end developer and another experienced back-end developer.
 
 Link to the company: [https://omnigon.com.ua/](https://omnigon.com.ua/)
 
