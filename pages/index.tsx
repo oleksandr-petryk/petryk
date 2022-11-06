@@ -65,25 +65,28 @@ const Home: NextPage = () => {
               <span>English: B1</span> <br />
               <span>Commercial experience: 6 months</span> <br />
             </div>
-            <button className='
+            <Link
+              href='/about'
+              className='
               bg-primary
-              px-10
-              py-2
-              mt-5
-              rounded-md
-              flex
-              items-center
-              space-x-2
-              sm:self-center
-            '>
-              <Link
+                px-10
+                py-2
+                mt-5
+                space-x-2
+                rounded-md
+                inline-flex
+                items-center
+                2xl:justify-start
+                sm:self-center
+              '
+            >
+              <span
                 className='text-white text-xl font-bold'
-                href='/about'
-              >learn more</Link>
+              >learn more</span>
               <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1.5L6 6.5L1 11.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </button>
+            </Link>
           </div>
           <div className='sm:hidden ml-5'>
             <Image
