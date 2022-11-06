@@ -18,6 +18,8 @@ Achievements:
 - Rewrote SSR for Vue when migrating from Vue2 to Vue3
 - Communicated with customer in English
 
+From Apr 2023, to now
+
 ## Languages
 
 - Ukrainian
