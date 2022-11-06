@@ -1,6 +1,7 @@
 import { BaseLayout } from 'components/BaseLayout';
 import type { NextPage } from 'next'
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect } from 'react';
 
 import Picture from '../public/PetrykOleksandr.png';
@@ -23,16 +24,17 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <BaseLayout transparentNav={true}>
+    <BaseLayout transparentNav={true} fullFrame={true}>
       <header className='
+        h-full
         container
         flex
-        h-full
         2xl:items-center
         2xl:justify-between
         md:justify-around
         sm:items-start
         sm:pt-20
+        sm:py-4
       '>
         <div className='
           2xl:w-50
@@ -68,7 +70,10 @@ const Home: NextPage = () => {
             space-x-2
             sm:self-center
           '>
-            <span className='text-white text-xl font-bold'>learn more</span>
+            <Link
+              className='text-white text-xl font-bold'
+              href='/about'
+            >learn more</Link>
 
             <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1.5L6 6.5L1 11.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
