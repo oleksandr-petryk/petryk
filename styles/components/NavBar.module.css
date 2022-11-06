@@ -9,7 +9,7 @@
 }
 
 .navBarWrapperBlur {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(var(--theme-color-revert-rgb), 0.1);
   backdrop-filter: blur(10px);
 }
 

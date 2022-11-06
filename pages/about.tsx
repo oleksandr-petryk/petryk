@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import ReactMarkdown from 'react-markdown'
 import axios from 'axios';
 import remarkGfm from 'remark-gfm'
-
 
 import { BaseLayout } from 'components/BaseLayout';
 import { useEffect, useState } from 'react';
@@ -17,6 +17,11 @@ const About: NextPage = ({ ...props }: any) => {
       try {
         const { status, data } = await axios.get(
           url,
+          {
+            params: {
+              t: new Date().getTime()
+            },
+          }
         );
 
         if (status === 200) {
@@ -31,11 +36,18 @@ const About: NextPage = ({ ...props }: any) => {
   }, []);
 
   return (
-    <BaseLayout>
-      <section className='container'>
-        <ReactMarkdown remarkPlugins={[remarkGfm]} >{ markDown }</ReactMarkdown>
-      </section>
-    </BaseLayout>
+    <>
+      <Head>
+        <meta name="keywords" content="About Petryk Oleksandr, Oleksandr Petryk's CV" />
+        <meta name="description" content="Oleksandr Petryk's technical skills" />
+        <title>About Oleksandr Petryk</title>
+      </Head>
+      <BaseLayout>
+        <section className='container'>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} >{ markDown }</ReactMarkdown>
+        </section>
+      </BaseLayout>
+    </>
   )
 }
 

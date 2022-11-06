@@ -9,11 +9,11 @@ export const NavBar: NextPage<{
   return (
     <div className={[styles.navBarWrapper, !transparent ? styles.navBarWrapperBlur : ''].join(' ')}>
       <nav className={[styles.navBar, 'container'].join(' ')}>
-        <Link href='/' className='text-3xl font-bold text-black sm:hidden'>Petryk</Link>
+        <Link href='/' className='text-inherit text-3xl font- sm:hidden'>Petryk</Link>
 
         <div className='sm:space-x-20 space-x-4 font-semibold text-lg'>
-          <Link href="/" className='text-black'>home</Link>
-          <Link href="/about" className='text-black'>about</Link>
+          <Link href="/" className='text-inherit'>home</Link>
+          <Link href="/about" className='text-inherit'>about</Link>
         </div>
       </nav>
     </div>
