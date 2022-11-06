@@ -2,7 +2,7 @@
 
 Software engineer, Sambir Collage of Economics and Information Technology
 
-From Sep, 2019, to Jun, 2023
+From Sep 2019, to Jun 2023
 
 ## Experience
 
