@@ -37,7 +37,7 @@ h5 {
 }
 
 a {
-  color: #027FFE;
+  @apply text-link;
 }
 p {
   margin: 0.4rem 0;

@@ -8,7 +8,7 @@ export const EditOnGitHub: NextPage<{
       href={url}
       target='_blank'
       rel='noreferrer'
-      className='flex space-x-1.5 mt-10'
+      className='flex space-x-1.5 mt-20'
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
