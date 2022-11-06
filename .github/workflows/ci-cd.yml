@@ -31,7 +31,6 @@ jobs:
           echo $CR_PAT | docker login ghcr.io -u petryk --password-stdin
       - name: Build image and push it to GitHub Packages
         run: |
-          cd frontend
           docker build . --tag ghcr.io/sasha-hk/petryk-frontend:latest
           docker push ghcr.io/sasha-hk/petryk-frontend:latest
   deploy:
