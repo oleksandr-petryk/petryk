@@ -53,7 +53,7 @@ const Home: NextPage = () => {
             <div className='
               font-bold
             '>
-              <h1 className='text-primary m-0'>Oleksandr Petryk</h1>
+              <h1 className='text-primary dark:text-primary-400 m-0'>Oleksandr Petryk</h1>
               <h2 className='m-0'>Back-end developer</h2>
             </div>
 

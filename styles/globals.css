@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   --theme-color: 'white';
   --theme-color-rgb: 0, 0, 0;
@@ -22,28 +21,23 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weigth: theme('titles.weight');
 }
-
 h1 {
   font-size: theme('titles.h1');
   margin: 40px 0 10px;
 }
-
 h2 {
   font-size: theme('titles.h2');
-  margin: 34px 0 7px;
+  margin: 2.5rem 0 0.1rem 0;
   box-sizing: content-box;
 }
-
 h3 {
   font-size: theme('titles.h3');
   margin: 30px 0 5px;
 }
-
 h4 {
   font-size: theme('titles.h4');
   margin: 25px 0 2px;
 }
-
 h5 {
   font-size: theme('titles.h5');
   margin: 10px 0 0;
@@ -52,10 +46,20 @@ h5 {
 a {
   color: #027FFE;
 }
+p {
+  margin: 0.4rem 0;
+}
 
-li {
+ul, ol {
+  margin: 0.2rem 0 1rem 0;
+  list-style-position: inside;
+  padding-left: 0.5rem;
+}
+ul li {
   list-style-type: disc;
-  margin-left: 1.1rem;
+}
+ol li {
+  list-style-type: number;
 }
 
 /* Containers */

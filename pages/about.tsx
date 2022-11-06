@@ -3,17 +3,19 @@ import Head from 'next/head';
 import ReactMarkdown from 'react-markdown'
 import axios from 'axios';
 import remarkGfm from 'remark-gfm'
-
-import { BaseLayout } from 'components/BaseLayout';
 import { useEffect, useState } from 'react';
 
-const About: NextPage = ({ ...props }: any) => {
+import { BaseLayout } from 'components/BaseLayout';
+import { EditOnGitHub } from 'components/EditOnGitHub';
+
+const About: NextPage = () => {
   const [markDown, setMarkDown] = useState('');
 
-  const url = 'https://raw.githubusercontent.com/Sasha-hk/petryk/main/content/About.md';
+  const rawPageUrl = 'https://raw.githubusercontent.com/Sasha-hk/petryk/main/content/About.md';
+  const editOnGitHubUrl = 'https://github.com/Sasha-hk/petryk/edit/main/content/About.md';
 
   useEffect(() => {
-    const getMd = async () => {
+    const getMd = async (url: string) => {
       try {
         const { status, data } = await axios.get(
           url,
@@ -32,7 +34,7 @@ const About: NextPage = ({ ...props }: any) => {
       }
     };
 
-    getMd();
+    getMd(rawPageUrl);
   }, []);
 
   return (
@@ -45,6 +47,8 @@ const About: NextPage = ({ ...props }: any) => {
       <BaseLayout>
         <section className='container'>
           <ReactMarkdown remarkPlugins={[remarkGfm]} >{ markDown }</ReactMarkdown>
+
+          <EditOnGitHub url={editOnGitHubUrl} />
         </section>
       </BaseLayout>
     </>
