@@ -12,7 +12,7 @@ export const BaseLayout: NextPage<{
     <>
       <NavBar transparent={transparentNav} />
 
-      <div className={['2xl:py-16 sm:py-4', fullFrame ? 'h-full' : 'min-h-full'].join(' ')}>
+      <div className={['2xl:py-16 sm:pt-4 sm:pb-20', fullFrame ? 'h-full' : 'min-h-full'].join(' ')}>
         { children }
       </div>
     </>
