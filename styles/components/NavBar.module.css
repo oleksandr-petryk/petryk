@@ -1,16 +1,12 @@
 .navBarWrapper {
-  height: 60px;
-  width: 100%;
-  position: fixed;
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
+  position: fixed;
   top: 0;
   left: 0;
-}
-
-.navBarWrapperBlur {
-  background: rgba(var(--theme-color-revert-rgb), 0.1);
-  backdrop-filter: blur(10px);
+  height: 60px;
+  width: 100%;
 }
 
 .navBar {

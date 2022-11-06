@@ -4,11 +4,9 @@ import { ThemeSwitch } from 'components/ThemeSwitch';
 
 import styles from '../styles/components/NavBar.module.css';
 
-export const NavBar: NextPage<{
-  transparent?: boolean
-}> = ({ transparent }) => {
+export const NavBar: NextPage = () => {
   return (
-    <div className={[styles.navBarWrapper, !transparent ? styles.navBarWrapperBlur : ''].join(' ')}>
+    <div className={styles.navBarWrapper}>
       <nav className={[styles.navBar, 'container'].join(' ')}>
         <Link href='/' className='text-inherit text-3xl font- sm:hidden'>Petryk</Link>
 

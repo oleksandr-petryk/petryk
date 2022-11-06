@@ -4,13 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  --theme-color: 'white';
-  --theme-color-rgb: 0, 0, 0;
-  --theme-color-revert: 'black';
-  --theme-color-rever-rgb: 255, 255, 255;
-}
-
 html,
 body {
   font-size: 16px;
@@ -113,22 +106,5 @@ ol li {
   html,
   body {
     font-size: 15px;
-  }
-}
-
-/* Theme */
-@media (prefers-color-scheme: dark) {
-  * {
-    --theme-color: 'black';
-    --theme-color-rgb: 255, 255, 255;
-    --theme-color-revert: 'white';
-    --theme-color-rever-rgb: 0, 0, 0;
-  }
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
   }
 }

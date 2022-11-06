@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Oleksandr Petryk's website" />
         <title>Oleksandr Petryk / Back-end developer</title>
       </Head>
-      <BaseLayout transparentNav={true} fullFrame={true}>
+      <BaseLayout fullFrame={true}>
         <header className='
           h-full
           container
