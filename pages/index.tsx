@@ -92,8 +92,8 @@ const Home: NextPage = () => {
             <Image
               src={Picture.src}
               alt="Oleksandr Petryk's picture"
-              width={2000}
-              height={5000}
+              width={400}
+              height={700}
               className='shrink-0 rounded-md 2xl:w-80 lg:w-70'
             />
           </div>
