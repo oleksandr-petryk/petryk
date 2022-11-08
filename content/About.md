@@ -39,7 +39,7 @@ Achievements:
 - Back-end: Express.js, Nest.js
 - Front-end: React.js, Next.js
 - Testing: Jest.js
-- Dev tools: GIT & GitHub, Docker, SSH, VIM, VS Code
+- Dev tools: GIT & GitHub, Docker, SSH, VIM, Tmux, VS Code
 - Other knowledge: JWT, OAuth2.0, unit & Integration testing
 - Bling typing
 
