@@ -1,3 +1,10 @@
+# About me
+
+I'm Oleksandr, a backend developer from Ukraine. 
+I have been learning web development since 2019 and have achieved good results.
+
+Read more about me below
+
 ## Education
 
 Software engineer, Sambir Collage of Economics and Information Technology
@@ -22,8 +29,8 @@ Achievements:
 
 ## Languages
 
-- Ukrainian
-- English
+- Ukrainian - Native
+- English - B1
 
 ## Skills
 
@@ -31,6 +38,7 @@ Achievements:
 - Node.js (JS / TS)
 - Back-end: Express.js, Nest.js
 - Front-end: React.js, Next.js
+- Testing: Jest.js
 - Dev tools: GIT & GitHub, Docker, SSH, VIM, VS Code
 - Other knowledge: JWT, OAuth2.0, unit & Integration testing
 - Bling typing
