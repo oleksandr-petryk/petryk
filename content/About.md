@@ -20,6 +20,7 @@ Link to the company: [https://omnigon.com.ua/](https://omnigon.com.ua/)
 
 Achievements:
 
+- Wrote e2e and unit tests for Express.js application on Jest
 - Ported the app and bunch of others private libraries form JS to TS
 - Created one library from scratch
 - Rewrote SSR for Vue when migrating from Vue2 to Vue3
