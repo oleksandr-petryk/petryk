@@ -7,21 +7,22 @@ Read more about me below
 
 ## Education
 
-Software engineer, Sambir Collage of Economics and Information Technology
+Software engineer, Sambir College of Economics and Information Technologies
 
 *From Sep 2019, to Jun 2023*
 
 ## Experience
 
-Worked on OpenID provider, based on Express.js. There were 3 Vue.js developers
-in the team, me as a back-end developer and another experienced back-end developer.
+Worked on OpenID provider, based on Express.js. There were 3 Vue.js 
+developers in the team, I was a back-end developer and another experienced 
+person was also a back-end developer.
 
 Link to the company: [https://omnigon.com.ua/](https://omnigon.com.ua/)
 
 Achievements:
 
 - Wrote e2e and unit tests for Express.js application on Jest
-- Ported the app and bunch of others private libraries form JS to TS
+- Ported the app and bunch of others private libraries from JS to TS
 - Created one library from scratch
 - Rewrote SSR for Vue when migrating from Vue2 to Vue3
 - Communicated with customer in English
@@ -42,7 +43,7 @@ Achievements:
 - Testing: Jest.js
 - Dev tools: GIT & GitHub, Docker, SSH, VIM, Tmux, VS Code
 - Other knowledge: JWT, OAuth2.0, unit & Integration testing
-- Bling typing
+- Blind typing
 
 For self-development, I learned C++, and related topics:
 
