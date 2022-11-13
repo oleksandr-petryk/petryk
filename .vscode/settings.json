@@ -6,6 +6,7 @@
     "Cantarell",
     "commitlint",
     "Fira",
+    "Hado",
     "Kanban",
     "Neue",
     "Nunito",
@@ -17,8 +18,5 @@
     "Sambir",
     "Segoe",
     "tailwindcss"
-  ],
-  "githubPullRequests.ignoredPullRequestBranches": [
-    "main"
   ]
 }
