@@ -1,5 +1,5 @@
 import { BaseLayout } from 'components/BaseLayout';
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
             <div className='
               font-bold
             '>
-              <h1 className='text-primary dark:text-primary-400 m-0'>Oleksandr Petryk</h1>
+              <h1 className='text-primary-500 dark:text-primary m-0'>Oleksandr Petryk</h1>
               <h2 className='m-0'>Back-end developer</h2>
             </div>
 
@@ -63,12 +63,11 @@ const Home: NextPage = () => {
               text-lg
             '>
               <span>English: B1</span> <br />
-              <span>Commercial experience: 6 months</span> <br />
+              <span>Commercial experience: 8 months</span> <br />
             </div>
             <Link
               href='/about'
               className='
-              bg-primary
                 px-10
                 py-2
                 mt-5
@@ -78,18 +77,32 @@ const Home: NextPage = () => {
                 items-center
                 2xl:justify-start
                 sm:self-center
+                bg-primary-500
+                dark:bg-primary
+                text-color-light
+                stroke-color-light
+                dark:stroke-color-dark
+                dark:text-color-dark
+                shadow-sm
+                shadow-primary-500/50
+                hover:shadow-primary/50
+                hover:shadow-lg
+                transition-md
+                duration-100
+                ease-in-out
               '
             >
               <span
-                className='text-white text-xl font-bold'
+                className='text-xl font-bold'
               >learn more</span>
               <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1.5L6 6.5L1 11.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M1 1.5L6 6.5L1 11.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </Link>
           </div>
           <div className='sm:hidden ml-5'>
             <Image
+              priority={true}
               src={Picture.src}
               alt="Oleksandr Petryk's picture"
               width={400}

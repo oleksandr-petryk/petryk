@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -8,7 +11,7 @@ module.exports = {
   ],
   theme: {
     titles: {
-      weight: '600',
+      weight: '700',
       h1: '2.5rem',
       h2: '2.1rem',
       h3: '1.6rem',
@@ -17,7 +20,7 @@ module.exports = {
     },
     screens: {
       '2xl': { max: '9999px' },
-      // => @media (min-width: 1201px) { ... }
+      // => @media (max-width: 9999px) { ... }
 
       xl: { max: '1200px' },
       // => @media (max-width: 1200px) { ... }
@@ -48,9 +51,19 @@ module.exports = {
         ],
       },
       colors: {
+        background: {
+          dark: '#353A44',
+          DEFAULT: '#EDF2FC',
+          light: '#EDF2FC',
+        },
+        color: {
+          dark: '#393B45',
+          DEFAULT: '#393B45',
+          light: '#FCFEFD',
+        },
         link: '#027FFE',
         primary: {
-          DEFAULT: '#598A13',
+          DEFAULT: '#A5BC83',
           100: '#C6DBA8',
           200: '#9EB977',
           300: '#86A855',

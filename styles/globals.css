@@ -107,4 +107,8 @@ ol li {
   body {
     font-size: 15px;
   }
+
+  p {
+    font-size: 16px;
+  }
 }

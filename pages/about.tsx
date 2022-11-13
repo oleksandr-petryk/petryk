@@ -1,9 +1,10 @@
+import axios from 'axios';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import ReactMarkdown from 'react-markdown'
-import axios from 'axios';
-import remarkGfm from 'remark-gfm'
 import { useEffect, useState } from 'react';
+import ReactLoading from 'react-loading';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 import { BaseLayout } from 'components/BaseLayout';
 import { EditOnGitHub } from 'components/EditOnGitHub';
@@ -46,9 +47,21 @@ const About: NextPage = () => {
       </Head>
       <BaseLayout>
         <section className='container'>
-          <ReactMarkdown remarkPlugins={[remarkGfm]} >{ markDown }</ReactMarkdown>
-
-          <EditOnGitHub url={editOnGitHubUrl} />
+          {
+            markDown.length !== 0
+              ? <>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} >{markDown}</ReactMarkdown>
+                <EditOnGitHub url={editOnGitHubUrl} />
+              </>
+              : <div className='flex justify-center mt-20'>
+                <ReactLoading
+                  type='spokes'
+                  color='white'
+                  height={70}
+                  width={70}
+                />
+              </div>
+          }
         </section>
       </BaseLayout>
     </>

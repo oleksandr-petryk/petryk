@@ -11,7 +11,7 @@ export const BaseLayout: NextPage<{
     <>
       <NavBar />
 
-      <div className={['2xl:py-16 sm:pt-4 sm:pb-20', fullFrame ? 'h-full' : 'min-h-full'].join(' ')}>
+      <div className={['2xl:py-16 sm:pt-4 sm:pb-24', fullFrame ? 'h-full' : 'min-h-full'].join(' ')}>
         { children }
       </div>
     </>
