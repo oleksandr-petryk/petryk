@@ -1,6 +1,6 @@
 # Oleksandr Petryk's website
 
-Hi, I wrote this website for myself as CV, and pet project.
+Hi, I wrote this website for myself as CV and pet project.
 
 The technologies I use to create the site:
 
