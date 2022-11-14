@@ -17,7 +17,7 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN yarn build
+RUN yarn run build
 
 # Run stage
 FROM node:17-alpine3.14 AS runner
