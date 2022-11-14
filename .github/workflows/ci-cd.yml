@@ -21,7 +21,6 @@ jobs:
   build-image:
     runs-on: ubuntu-latest
     name: Build and push Docker image
-    needs: lint-code
     steps:
       - uses: actions/checkout@v2
       - name: Login to Github Packages
@@ -35,7 +34,9 @@ jobs:
           docker push ghcr.io/sasha-hk/petryk-frontend:latest
   deploy:
     name: Deploy
-    needs: build-image
+    needs:
+      - build-image
+      - lint-code
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repo
