@@ -25,7 +25,7 @@
   "devDependencies": {
     "@commitlint/config-angular": "^17.2.0",
     "@types/node": "18.11.9",
-    "@types/react": "18.0.21",
+    "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
     "@typescript-eslint/parser": "^5.42.1",
     "autoprefixer": "^10.4.12",
