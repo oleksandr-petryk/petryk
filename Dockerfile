@@ -1,7 +1,7 @@
 # Packages stage
 FROM node:17-alpine3.14 AS deps
 
-# RUN apk add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 
