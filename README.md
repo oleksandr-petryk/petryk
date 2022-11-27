@@ -26,3 +26,24 @@ Development environment:
 - DependaBot (dependencies updater)
 - HadoLint (Docker linter)
 - other VS Code extensions
+
+## Run in development mode
+
+Requirements to run:
+
+- Node.js v16
+- Package manager Yarn
+
+Run process:
+
+1. At the root of the project run the following:
+
+   ```sh
+   yarn install
+   ```
+
+2. Run Next.js in development mode:
+
+   ```sh
+   yarn dev
+   ```
