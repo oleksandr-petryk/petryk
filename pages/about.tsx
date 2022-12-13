@@ -56,7 +56,7 @@ const About: NextPage = () => {
               : <div className='flex justify-center mt-20'>
                 <ReactLoading
                   type='spokes'
-                  color='white'
+                  color='gray'
                   height={70}
                   width={70}
                 />
