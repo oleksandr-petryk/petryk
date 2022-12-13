@@ -13,7 +13,7 @@
     "@mdx-js/react": "^2.1.5",
     "@next/mdx": "^13.0.6",
     "@tailwindcss/typography": "^0.5.8",
-    "axios": "^1.2.0",
+    "axios": "^1.2.1",
     "next": "latest",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
