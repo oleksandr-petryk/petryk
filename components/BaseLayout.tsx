@@ -6,7 +6,10 @@ import { NavBar } from 'components/NavBar';
 import { useRecoilValue } from 'recoil';
 import { layoutState } from 'state/layout.state';
 
-const BackgroundGradient = dynamic(() => import('../components/BackgroundGradient') as any, { ssr: false });
+const BackgroundGradient = dynamic(
+  () => import('../components/BackgroundGradient'),
+  { ssr: false }
+);
 
 export const BaseLayout: FC<{
   children: React.ReactNode,
