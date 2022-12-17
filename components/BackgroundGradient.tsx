@@ -215,7 +215,7 @@ const BackgroundGradient: FC = () => {
     // Create orbs
     const orbs: Array<any> = [];
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 5; i++) {
       const orb = new Orb(colorPalette.randomColor());
 
       app.stage.addChild(orb.graphics);
