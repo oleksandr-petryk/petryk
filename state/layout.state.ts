@@ -1,7 +1,7 @@
 import { atom } from 'recoil';
 
 export const layoutState = atom({
-  key: 'layout',
+  key: 'myLayout',
   default: {
     fullFrame: false,
   },
