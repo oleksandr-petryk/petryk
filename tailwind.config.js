@@ -61,7 +61,6 @@ module.exports = {
           DEFAULT: '#393B45',
           light: '#FCFEFD',
         },
-        link: '#598A13',
         primary: {
           DEFAULT: '#A5BC83',
           100: '#C6DBA8',

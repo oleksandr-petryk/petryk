@@ -1,6 +1,6 @@
-import type { NextPage } from 'next';
+import { FC } from 'react';
 
-export const EditOnGitHub: NextPage<{
+export const EditOnGitHub: FC<{
   url: string
 }> = ({ url }) => {
   return (
@@ -13,8 +13,8 @@ export const EditOnGitHub: NextPage<{
         flex
         space-x-1.5
         items-start
-        text-primary-500
-        dark:text-primary
+      text-primary-400
+      dark:text-primary
       '
     >
       <svg

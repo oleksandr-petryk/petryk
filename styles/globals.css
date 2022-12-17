@@ -37,7 +37,7 @@ h5 {
 }
 
 a {
-  @apply text-link;
+  @apply text-primary-400 dark:text-primary;
 }
 p {
   margin: 0.4rem 0;

@@ -4,18 +4,25 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import ReactLoading from 'react-loading';
 import ReactMarkdown from 'react-markdown';
+import { useSetRecoilState } from 'recoil';
 import remarkGfm from 'remark-gfm';
 
-import { BaseLayout } from 'components/BaseLayout';
 import { EditOnGitHub } from 'components/EditOnGitHub';
+import { layoutState } from 'state/layout.state';
 
 const About: NextPage = () => {
+  const setLayout = useSetRecoilState(layoutState);
+
   const [markDown, setMarkDown] = useState('');
 
   const rawPageUrl = 'https://raw.githubusercontent.com/Sasha-hk/petryk/main/content/About.md';
   const editOnGitHubUrl = 'https://github.com/Sasha-hk/petryk/edit/main/content/About.md';
 
   useEffect(() => {
+    setLayout({
+      fullFrame: false,
+    });
+
     const getMd = async (url: string) => {
       try {
         const { status, data } = await axios.get(
@@ -45,25 +52,24 @@ const About: NextPage = () => {
         <meta name="description" content="Oleksandr Petryk's technical skills" />
         <title>About Oleksandr Petryk</title>
       </Head>
-      <BaseLayout>
-        <section className='container'>
-          {
-            markDown.length !== 0
-              ? <>
-                <ReactMarkdown remarkPlugins={[remarkGfm]} >{markDown}</ReactMarkdown>
-                <EditOnGitHub url={editOnGitHubUrl} />
-              </>
-              : <div className='flex justify-center mt-20'>
-                <ReactLoading
-                  type='spokes'
-                  color='gray'
-                  height={70}
-                  width={70}
-                />
-              </div>
-          }
-        </section>
-      </BaseLayout>
+
+      <section className='container'>
+        {
+          markDown.length !== 0
+            ? <>
+              <ReactMarkdown remarkPlugins={[remarkGfm]} >{markDown}</ReactMarkdown>
+              <EditOnGitHub url={editOnGitHubUrl} />
+            </>
+            : <div className='flex justify-center mt-20'>
+              <ReactLoading
+                type='spokes'
+                color='gray'
+                height={70}
+                width={70}
+              />
+            </div>
+        }
+      </section>
     </>
   )
 }

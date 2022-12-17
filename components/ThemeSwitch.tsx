@@ -1,8 +1,7 @@
-import type { NextPage } from 'next'
-import { useTheme } from 'next-themes'
-import { useState, useEffect } from 'react'
+import { useTheme } from 'next-themes';
+import { FC, useEffect, useState } from 'react';
 
-export const ThemeSwitch: NextPage = () => {
+export const ThemeSwitch: FC = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
