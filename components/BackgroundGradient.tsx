@@ -33,13 +33,12 @@ const BackgroundGradient: FC = () => {
 
       setColors() {
         // pick a random hue somewhere between 220 and 360
-        // this.hue = ~~random(220, 360);
-        this.hue = ~~random(50, 80);
+        this.hue = ~~random(30, 80);
         this.complimentaryHue1 = this.hue + 30;
         this.complimentaryHue2 = this.hue + 60;
+
         // define a fixed saturation and lightness
         this.saturation = 50;
-        // this.saturation = 95;
         this.lightness = 70;
 
         // define a base color
@@ -216,7 +215,7 @@ const BackgroundGradient: FC = () => {
     // Create orbs
     const orbs: Array<any> = [];
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
       const orb = new Orb(colorPalette.randomColor());
 
       app.stage.addChild(orb.graphics);
@@ -242,7 +241,7 @@ const BackgroundGradient: FC = () => {
 
   return (
     <canvas
-      className={['orb-canvas', classes.canvas, classes.canvasAnimation].join(' ')}
+      className={['orb-canvas', classes.canvas].join(' ')}
     ></canvas>
   )
 }

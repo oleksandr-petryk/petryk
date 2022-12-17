@@ -22,7 +22,9 @@ const About: NextPage = () => {
     setLayout({
       fullFrame: false,
     });
+  }, []);
 
+  useEffect(() => {
     const getMd = async (url: string) => {
       try {
         const { status, data } = await axios.get(
@@ -46,31 +48,29 @@ const About: NextPage = () => {
   }, []);
 
   return (
-    <>
+    <section className='container'>
       <Head>
         <meta name="keywords" content="About Petryk Oleksandr, Oleksandr Petryk's CV" />
         <meta name="description" content="Oleksandr Petryk's technical skills" />
         <title>About Oleksandr Petryk</title>
       </Head>
 
-      <section className='container'>
-        {
-          markDown.length !== 0
-            ? <>
-              <ReactMarkdown remarkPlugins={[remarkGfm]} >{markDown}</ReactMarkdown>
-              <EditOnGitHub url={editOnGitHubUrl} />
-            </>
-            : <div className='flex justify-center mt-20'>
-              <ReactLoading
-                type='spokes'
-                color='gray'
-                height={70}
-                width={70}
-              />
-            </div>
-        }
-      </section>
-    </>
+      {
+        markDown.length !== 0
+          ? <>
+            <ReactMarkdown remarkPlugins={[remarkGfm]} >{markDown}</ReactMarkdown>
+            <EditOnGitHub url={editOnGitHubUrl} />
+          </>
+          : <div className='flex justify-center mt-20'>
+            <ReactLoading
+              type='spokes'
+              color='gray'
+              height={70}
+              width={70}
+            />
+          </div>
+      }
+    </section>
   )
 }
 

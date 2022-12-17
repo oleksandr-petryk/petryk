@@ -9,18 +9,32 @@
   height: 100%;
   pointer-events: none;
   overscroll-behavior: contain;
-}
-
-.canvasAnimation {
-  animation: Appears 1s ease-in 0.1s 1 both;
+  animation: Appears 4s ease-in 0.1s 1 both, Flashing 4s ease-in-out 4.1s infinite none;
 }
 
 @keyframes Appears {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
-
   100% {
-    opacity: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes Flashing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.9;
   }
 }
