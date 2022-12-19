@@ -19,7 +19,7 @@
     "hsl-to-hex": "^1.0.0",
     "next": "latest",
     "next-themes": "^0.2.1",
-    "pixi.js": "5.x",
+    "pixi.js": "7.x",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-loading": "^2.0.3",
