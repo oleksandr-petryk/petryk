@@ -263,7 +263,7 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mdx-js/loader@^2.2.1":
+"@mdx-js/loader@^2.1.5":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-2.2.1.tgz#71634e87659cd29240933d174a151a4d4ab3b70c"
   integrity sha512-J4E8A5H+xtk4otZiEZ5AXl61Tj04Avm5MqLQazITdI3+puVXVnTTuZUKM1oNHTtfDIfOl0uMt+o/Ij+x6Fvf+g==
@@ -4455,10 +4455,10 @@ signal-exit@^3.0.2, signal-exit@^3.0.3, signal-exit@^3.0.7:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simplex-noise@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/simplex-noise/-/simplex-noise-3.0.0.tgz#0bbb8bbb3b13483d53b282a9ab59d6c9b978ac7a"
-  integrity sha512-sZP1EvUpRW/f3wjeSWUs94Xp4+S46oLGNiqkaROM92m3FvFm5ymJFMg67LcHpqikI8isXJlN/sE1Cfpe86xp0w==
+simplex-noise@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/simplex-noise/-/simplex-noise-4.0.1.tgz#1573a4eaa46ce488bdf5f1e7ab3a1f798126781f"
+  integrity sha512-zl/+bdSqW7HJOQ0oDbxrNYaF4F5ik0i7M6YOYmEoIJNtg16NpvWaTTM1Y7oV/7T0jFljawLgYPS81Uu2rsfo1A==
 
 slash@^3.0.0:
   version "3.0.0"
