@@ -263,7 +263,7 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mdx-js/loader@^2.2.1":
+"@mdx-js/loader@^2.1.5":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-2.2.1.tgz#71634e87659cd29240933d174a151a4d4ab3b70c"
   integrity sha512-J4E8A5H+xtk4otZiEZ5AXl61Tj04Avm5MqLQazITdI3+puVXVnTTuZUKM1oNHTtfDIfOl0uMt+o/Ij+x6Fvf+g==
@@ -496,10 +496,10 @@
   dependencies:
     "@pixi/core" "5.3.12"
 
-"@pixi/filter-kawase-blur@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@pixi/filter-kawase-blur/-/filter-kawase-blur-3.2.0.tgz#f3fe6e3c17d191ae353959768c1170e85b2ad1dc"
-  integrity sha512-IO1UKn/XLvnV+ya4r1UOC9fTfXZjWvH9m6eQ/U+moBsQN5I5FihQfXCu586X4jb9VHNu3gFl7SUzirobhBfgtA==
+"@pixi/filter-kawase-blur@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@pixi/filter-kawase-blur/-/filter-kawase-blur-5.0.0.tgz#103642af2829861485a64407c7303e4d8e00570e"
+  integrity sha512-dKSTaPUOvdVkfx9x+kp0TzYjGAl8CLxIRGz6Wh43NKx96nVqd/lWqvlda+zloHVgZyQoJNHZZ4Spjcw2mYoaWg==
 
 "@pixi/filter-noise@5.3.12":
   version "5.3.12"
