@@ -2,6 +2,8 @@
 
 Hi, I wrote this website for myself as CV and pet project.
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/petryk)
+
 The technologies I use to create the site:
 
 - TypeScript (programming language)
