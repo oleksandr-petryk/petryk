@@ -13,11 +13,11 @@ Software engineer, Sambir College of Economics and Information Technologies
 
 ## Experience
 
+### Back-end developer at Omnigon
+
 Worked on OpenID provider, based on Express.js. There were 3 Vue.js 
 developers in the team, I was a back-end developer and another experienced 
 person was also a back-end developer.
-
-Link to the company: [https://omnigon.com.ua/](https://omnigon.com.ua/)
 
 Achievements:
 
@@ -26,8 +26,9 @@ Achievements:
 - Created one library from scratch
 - Rewrote SSR for Vue when migrating from Vue2 to Vue3
 - Communicated with customer in English
+- Expanded understanding of OAuth2.0 and OIDC
 
-*From Apr 2022, to now*
+*From April 2022, to December 2022*
 
 ## Languages
 
@@ -42,8 +43,7 @@ Achievements:
 - Front-end: React.js, Next.js
 - Testing: Jest.js
 - Dev tools: GIT & GitHub, Docker, SSH, VIM, Tmux, VS Code
-- Other knowledge: JWT, OAuth2.0, unit & Integration testing
-- Blind typing
+- Other knowledge & skills: JWT, OAuth2.0 & OIDC, unit & Integration testing, blind typing
 
 For self-development, I learned C++, and related topics:
 
