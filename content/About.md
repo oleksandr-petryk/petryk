@@ -1,9 +1,6 @@
 # About me
 
-I'm Oleksandr, a backend developer from Ukraine. 
-I have been learning web development since 2019 and have achieved good results.
-
-Read more about me below
+I'm interested in web development since 2019. I decided to become a developer simply because it interests me
 
 ## Education
 
@@ -15,18 +12,18 @@ Software engineer, Sambir College of Economics and Information Technologies
 
 ### Back-end developer at Omnigon
 
-Worked on OpenID provider, based on Express.js. There were 3 Vue.js 
-developers in the team, I was a back-end developer and another experienced 
-person was also a back-end developer.
+Worked on OpenID provider, based on Express.js and MongoDB. 
+There were 3 Vue.js developers in the team, another experienced 
+full-stack developer and I was a back-end developer.
 
 Achievements:
 
-- Wrote e2e and unit tests for Express.js application on Jest
-- Ported the app and bunch of others private libraries from JS to TS
-- Created one library from scratch
+- Wrote unit & e2e tests for Express.js application on Jest
+- Ported the app and bunch of others libraries from JS to TS
+- Created one library from scratch (wrote documentation & tests) 
 - Rewrote SSR for Vue when migrating from Vue2 to Vue3
-- Communicated with customer in English
-- Expanded understanding of OAuth2.0 and OIDC
+- Configured GitHub Actions for linting and testing
+- Communicated with customers in English
 
 *From April 2022, to December 2022*
 
@@ -37,18 +34,20 @@ Achievements:
 
 ## Skills
 
-- HTML / CSS
+- HTML/CSS
 - Node.js (JS / TS)
+- Unit & e2e testing: Jest
 - Back-end: Express.js, Nest.js
-- Front-end: React.js, Next.js
-- Testing: Jest.js
-- Dev tools: GIT & GitHub, Docker, SSH, VIM, Tmux, VS Code
-- Other knowledge & skills: JWT, OAuth2.0 & OIDC, unit & Integration testing, blind typing
+- Front-end: React.js, Next.js, Redux, Recoil
+- Database: PostgreSQL, MongoDB
+- Tools: GIT & GitHub, GPG, Docker, SSH, VIM, TMUX, VS Code 
+- Operating Systems: macOS
+- Other acknowledges: CI/CD, JWT, OAuth2.0, OIDC
 
-For self-development, I learned C++, and related topics:
+For self-development I learned: 
 
-- Data structures
-- Algorithms
+- Algorithms & data structures 
+- C++
 - UNIX
 
 ## Links
