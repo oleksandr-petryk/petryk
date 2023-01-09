@@ -1,6 +1,8 @@
 # About me
 
-I'm interested in web development since 2019. I decided to become a developer simply because it interests me
+I'm interested in web development since 2019. 
+
+I decided to become a developer simply because it interests me
 
 ## Education
 
