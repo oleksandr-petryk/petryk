@@ -14,7 +14,7 @@ The technologies I use to create the site:
 - Nginx (web server)
 - VPS (server)
 - GitHub Actions (CI/CD)
-- GitHub Packages (images hosting)
+- GitHub Packages (Docker images hosting)
 
 Development environment:
 
