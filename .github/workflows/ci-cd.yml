@@ -18,39 +18,39 @@ jobs:
         run: yarn install
       - name: Lint code
         run: yarn lint
-  build-image:
-    runs-on: ubuntu-latest
-    name: Build and push Docker image
-    steps:
-      - uses: actions/checkout@v2
-      - name: Login to Github Packages
-        env:
-          CR_PAT: ${{ secrets.GH_PACKAGES_TOKEN }}
-        run: |
-          echo $CR_PAT | docker login ghcr.io -u petryk --password-stdin
-      - name: Build image and push it to GitHub Packages
-        run: |
-          docker build . --tag ghcr.io/sasha-hk/petryk-frontend:latest
-          docker push ghcr.io/sasha-hk/petryk-frontend:latest
-  deploy:
-    name: Deploy
-    needs:
-      - build-image
-      - lint-code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout the repo
-        uses: actions/checkout@v2
-      - name: Deploy on VPS
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          script: |
-            cd /home/petryk/www/petryk
-            git pull origin main
-            cd docker
-            docker-compose stop
-            docker pull ghcr.io/sasha-hk/petryk-frontend:latest
-            docker-compose up -d
+#  build-image:
+#    runs-on: ubuntu-latest
+#    name: Build and push Docker image
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Login to Github Packages
+#        env:
+#          CR_PAT: ${{ secrets.GH_PACKAGES_TOKEN }}
+#        run: |
+#          echo $CR_PAT | docker login ghcr.io -u petryk --password-stdin
+#      - name: Build image and push it to GitHub Packages
+#        run: |
+#          docker build . --tag ghcr.io/sasha-hk/petryk-frontend:latest
+#          docker push ghcr.io/sasha-hk/petryk-frontend:latest
+#  deploy:
+#    name: Deploy
+#    needs:
+#      - build-image
+#      - lint-code
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout the repo
+#        uses: actions/checkout@v2
+#      - name: Deploy on VPS
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secrets.SSH_HOST }}
+#          username: ${{ secrets.SSH_USERNAME }}
+#          key: ${{ secrets.SSH_KEY }}
+#          script: |
+#            cd /home/petryk/www/petryk
+#            git pull origin main
+#            cd docker
+#            docker-compose stop
+#            docker pull ghcr.io/sasha-hk/petryk-frontend:latest
+#            docker-compose up -d
