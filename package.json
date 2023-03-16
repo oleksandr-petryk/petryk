@@ -20,6 +20,7 @@
     "next": "13.1.6",
     "next-themes": "^0.2.1",
     "pixi.js": "5.x",
+    "qrcode.react": "^3.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-loading": "^2.0.3",
