@@ -28,7 +28,7 @@ const QrCode: NextPage = () => {
         onChange={(e) => setValue(e.target.value)}
         type="text"
         placeholder="URL"
-        className="p-2 rounded mb-4"
+        className="p-2 rounded mb-4 border-2"
       />
 
       <QRCode
@@ -38,7 +38,7 @@ const QrCode: NextPage = () => {
         level={"H"}
         includeMargin={true}
       />
-      <a onClick={downloadQR} className="mt-4">
+      <a onClick={downloadQR} className="mt-4 underline cursor-pointer">
         Download QR
       </a>
     </div>
