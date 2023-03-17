@@ -1,0 +1,13 @@
+select {
+  @apply
+  border-black
+  dark:border-white
+  border-2
+  2xl:rounded-md
+  2xl:bg-transparent
+  sm:bg-white
+  dark:sm:bg-black
+  sm:rounded-full
+  sm:bg-none;
+  font-size: 1rem;
+}

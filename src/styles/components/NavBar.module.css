@@ -1,0 +1,45 @@
+.navBarWrapper {
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+}
+
+/* 2Xl / TV */
+@media only screen and (max-width: theme('screens.2xl.max')) {
+  .navBar {
+    justify-content: space-between;
+  }
+}
+
+/* XL / Desktop */
+@media only screen and (max-width: theme('screens.xl.max')) {
+}
+
+/* LG / Laptop */
+@media only screen and (max-width: theme('screens.lg.max')) {
+}
+
+/* MD / Tablets */
+@media only screen and (max-width: theme('screens.md.max')) {
+}
+
+/* SM / Phone */
+@media only screen and (max-width: theme('screens.sm.max')) {
+  .navBar {
+    justify-content: space-around;
+  }
+  .navBarWrapper {
+    top: auto;
+    bottom: 0;
+  }
+}
