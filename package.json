@@ -27,7 +27,7 @@
     "react-markdown": "^8.0.5",
     "recoil": "^0.7.6",
     "remark-gfm": "^3.0.1",
-    "simplex-noise": "3.0.1"
+    "simplex-noise": "4.0.1"
   },
   "devDependencies": {
     "@commitlint/config-angular": "^17.4.4",
