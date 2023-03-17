@@ -21,21 +21,20 @@ const QrCode: NextPage = () => {
   };
 
   return (
-    <div className="container flex flex-col items-center">
+    <div className="container flex flex-col items-center text-center">
       <h1 className="py-4">QR code generator</h1>
       <input
         value={inputValue}
         onChange={(e) => setValue(e.target.value)}
         type="text"
         placeholder="URL"
-        className="p-2 rounded mb-4 border-2"
+        className="p-2 rounded mb-4 border-2 text-md"
       />
 
       <QRCode
         id="qr-code-canvas"
         value={inputValue}
-        size={290}
-        level={"H"}
+        size={200}
         includeMargin={true}
       />
       <a onClick={downloadQR} className="mt-4 underline cursor-pointer">
