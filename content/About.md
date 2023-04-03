@@ -1,6 +1,6 @@
 # About me
 
-I'm interested in web development since 2019. 
+I'm interested in web development since 2019.
 
 I decided to become a developer simply because it interests me
 
@@ -14,15 +14,15 @@ Software engineer, Sambir College of Economics and Information Technologies
 
 ### Back-end developer at Omnigon
 
-Worked on OpenID provider, based on Express.js and MongoDB. 
-There were 3 Vue.js developers in the team, another experienced 
-full-stack developer and I was a back-end developer.
+Worked on OpenID provider, based on Express.js and MongoDB.
+There were 3 Vue.js developers in the team, another experienced
+full-stack developer, and I was a back-end developer.
 
 Achievements:
 
 - Wrote unit & e2e tests for Express.js application on Jest
 - Ported the app and bunch of others libraries from JS to TS
-- Created one library from scratch (wrote documentation & tests) 
+- Created one library from scratch (wrote documentation & tests)
 - Rewrote SSR for Vue when migrating from Vue2 to Vue3
 - Configured GitHub Actions for linting and testing
 - Communicated with customers in English
@@ -42,13 +42,13 @@ Achievements:
 - Back-end: Express.js, Nest.js
 - Front-end: React.js, Next.js, Redux, Recoil
 - Database: PostgreSQL, MongoDB
-- Tools: GIT & GitHub, GPG, Docker, SSH, VIM, TMUX, VS Code 
+- Tools: GIT & GitHub, GPG, Docker, SSH, VIM, TMUX, VS Code
 - Operating Systems: macOS
 - Other acknowledges: CI/CD, JWT, OAuth2.0, OIDC
 
-For self-development I learned: 
+For self development I learned:
 
-- Algorithms & data structures 
+- Algorithms & data structures
 - C++
 - UNIX
 

@@ -84,14 +84,6 @@ const Home: NextPage = () => {
           <h2 className='m-0'>Back-end developer</h2>
         </div>
 
-        <div className='
-          mt-4
-          mb-6
-          text-lg
-        '>
-          <span>English: B1</span> <br />
-          <span>{`Commercial experience: ${experience} months`}</span> <br />
-        </div>
         <Link
           href='/about'
           className='
