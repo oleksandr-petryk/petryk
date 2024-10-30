@@ -319,10 +319,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@^13.1.2":
-  version "13.1.6"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.1.6.tgz#53488d2117532d9d4789718cdbbba9c36fa20fd0"
-  integrity sha512-ZLhXXDJeHbudFpSZT68eYQRzOaNwkaw+NuO7Zvnm5XKB6P7hKSj2dS47ZtitrY0JaL3KxR4FoxUSYeLvdoRwtQ==
+"@next/mdx@^15.0.2":
+  version "15.0.2"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-15.0.2.tgz#8d7893b42d92fb4722dbe47499550b95b7b2ee35"
+  integrity sha512-CANCD3snLdLJxCcqn0DBAl5qMUBvAPdWA2cWljt+lnVtcvIfGXRVLwraqSOHBjddvZ3ClCYcf3AvjEBHA4NBxA==
   dependencies:
     source-map "^0.7.0"
 
