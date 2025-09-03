@@ -17,7 +17,7 @@
     "axios": "^1.3.4",
     "debounce": "^1.2.1",
     "hsl-to-hex": "^1.0.0",
-    "next": "13.1.6",
+    "next": "15.5.2",
     "next-themes": "^0.2.1",
     "pixi.js": "5.x",
     "qrcode.react": "^3.1.0",
